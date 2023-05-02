@@ -290,6 +290,7 @@ body {
     border: 0;
     padding-left: 10px;
     margin-left: 10px;
+    outline: none;
  }
 
     .footer {
