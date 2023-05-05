@@ -42,7 +42,7 @@ body {
     }
 
 
-  .main .category {
+  .main section {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
