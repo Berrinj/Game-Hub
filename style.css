@@ -261,11 +261,25 @@ body {
     background-color: #CFA7A5;
  }
 
- .newsletter p {
+ .newslettertext {
     padding-left: 7%;
     margin: 0;
     font-size: 20px;
     color: #fff;
+
+ }
+
+ .newsletterinput {
+    align-items: center;
+    max-width: 600px;
+    display: flex;
+    flex-direction: row;
+    flex-grow: 2;
+    margin-left: 50px;
+    
+
+
+
  }
 
  .newsletter .enteremail {
