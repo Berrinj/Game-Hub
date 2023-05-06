@@ -42,7 +42,7 @@ body {
     }
 
 
-  .main section {
+ .main .cat {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -192,9 +192,13 @@ body {
 
     }
 
+    a:hover, a:visited, a:link, a:active {
+        text-decoration: none;
+    }
+
     .games-container .rating {
         width: 63px;
-        margin: 0px 8px; 
+        margin: 0px 8px;
     }
 
     .price-box {
@@ -206,7 +210,6 @@ body {
     .price-box h1 {
         color: #fff;
         font-size: 24px;
-
     }
 
 
@@ -218,6 +221,7 @@ body {
     .games-container p, h3, h1 {
         width: 228px;
         margin: 8px 8px 0px 8px;
+        color: #1B203D;
     }
 
     .cyberpunk {
@@ -313,11 +317,24 @@ body {
         text-align: center;
         justify-content: space-between;
         align-items: center;
-        color: #BAC5CF;
+        color: #fff;
         width: 100%;
         height: 244px;
         padding: 0;
         margin: 0;
+      }
+
+      .footer p {
+        margin-bottom: 5px;
+      }
+
+      .footer .fcenter img {
+        margin-right: 6px;
+        margin-left: 6px;
+      }
+
+      .socials {
+        cursor: pointer;
       }
 
         .fleft {
@@ -335,3 +352,164 @@ body {
         float: right;
         padding-right: 10%
       }
+
+
+      /*Product Page*/
+
+    .productpagecontainer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 840px;
+        background: #fff;
+        margin-left: 26%;
+        margin-right: 30%;
+        padding-bottom: 31px;
+        margin-top: 44px;
+      }
+
+      .productpagecontainer h2 {
+        display: flex;
+        width: 368px;
+        margin-top: 44px;
+        margin-right: 97px;
+        justify-content: center;
+        width: 350px;
+      }
+
+      .productpagecontainer p {
+        display: flex;
+        flex-wrap: wrap;
+        width: 368px;
+        margin-right: 97px;
+      }
+
+       .mainimg {
+        float: left;
+        width: 254px;
+        margin-left: 97px;
+        margin-right: 25px;
+        margin-top: 44px;
+      }
+
+      .cartbuyheart button {
+        background-color: #CFA7A5;
+        height: 35px;
+        border: 0;
+        border-radius: 7px;
+      }
+
+      .cart {
+        width: 51px;
+      }
+
+      .buy {
+        width: 253px;
+      }
+
+      .heart {
+        width: 51px;
+      }
+      .description {
+        width: 645px;
+    }
+      .description h3{
+        margin-top: 20px;
+        margin-left: 97px;
+      }
+
+      .description p {
+        margin-left: 97px;
+        width: 645px;
+      }
+
+      #text {
+        display: none;
+      }
+
+      #toggle {
+        margin-left: 97px;
+        border: 0;
+        background-color: transparent;
+        padding: 0;
+        cursor: pointer;
+        color: darkblue;
+      }
+     
+      .visuals {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 742px;
+      }
+      .visuals h3{
+        margin-top: 20px;
+        margin-left: 97px;
+        margin-bottom: 10px;
+      }
+      .visuals iframe {
+        width: 742px;
+        padding-left: 97px;
+      }
+      .visuals .img1 {
+        margin-left: 97px;
+        width: 200px;
+      }
+
+      .visuals, .img1, .img2, .img3 {
+        margin-top: 11px;
+        justify-content: space-between;
+      }
+      
+      .img1 {
+        box-shadow: 0px 1px 2px 0px #1B203D;
+        cursor: pointer;
+      }
+
+      .img2 {
+        box-shadow: 0px 1px 2px 0px #1B203D;
+        cursor: pointer;
+      }
+      .img3 {
+        box-shadow: 0px 1px 2px 0px #1B203D;
+        cursor: pointer;
+      }
+
+      .reviews {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 742px;
+        }
+        
+      .reviews h3{
+        margin-top: 20px;
+        margin-left: 97px;
+        width: 100%;
+        margin-bottom: 10px;
+      }
+
+      .review1 {
+        margin-left: 97px;
+      }
+
+      .reviews, .review1, .review2 {
+        justify-content: space-between;
+      }
+     
+      .viewallreviews {
+        height: 22px;
+        width: 80px;
+        margin-top: 10px;
+        border-radius: 10px;
+        border: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        box-shadow: 2px 3px 5px 0px #BAC5CF;
+        cursor: pointer;
+        float: right;
+        margin-right: 80px;
+      }
+     
+      
+      
