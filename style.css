@@ -779,6 +779,7 @@ body {
       .paymentmethods {
         width: 465px;
         margin: auto;
+        gap: 6px;
         display: flex;
         justify-content: center;
         margin-bottom: 40px;
@@ -876,7 +877,7 @@ body {
         box-shadow: 0px 1px 2px 0px #1B203D;
         margin-right: 10%;
         align-self: flex-end;
-        margin-bottom: 15px;
+        margin-bottom: 16px;
     }
     
      .testinputemail {
