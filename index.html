@@ -7,14 +7,16 @@
         <meta name="author" content="Marte Lilleberre">
         <meta name="dcterms.created" content="sat., 29 apr 2023 18:59:56 GMT">
         <meta name="description" content="About Game hub, the Console game store">
-        <meta name="keywords" content="Game Hub | About">
+        <meta name="keywords" content="Game Hub | games for playstation xbox nintendo PC and more">
         <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@600&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
+        
         <div class="header"> 
+            
             <img src="logo/GameHub_Logopink72.png" alt="Game Hub logo">
         </div>
         <div class="welcomemessage">
@@ -23,7 +25,7 @@
         <div class="wrapper">
         <aside>
             <nav class="leftnav">
-                    <img class="small-logo" src="logo/GameHub_LogoNoslogan72.png" alt="gamehub logo home">
+                <img class="small-logo" src="logo/GameHub_LogoNoslogan72.png" alt="gamehub logo home">
                     <img class="vector" src="vector/profile.svg" alt="profile icon"><br>
                     <a href="profile.html">My Profile</a><br>
                     <img class="vector" src="vector/cart.svg" alt="cart icon"><br>
@@ -37,32 +39,38 @@
             </nav>
         </aside>
         
-
+    
         <div class="main">
+            <section class="maintop-background">
+                <div class="topmenu">
 
-            <div class="topmenu">
-                <div class="platforms">
-                    <img src="vector/PC.svg" alt="Browse games by PC">
-                    <img src="vector/Playstation.svg" alt="Browse games by PlayStation">
-                    <img src="vector/xbox.svg" alt="Browse games by Xbox">
-                    <img src="vector/Nintendo.svg" alt="Browse games by Nintendo">
-                </div>
                     <form action="#" class="searchbar">
                         <input type="text" placeholder="Search for games">
                         <button type="submit"><img src="vector/search.svg" alt="search icon"></button>
                     </form>
-                
-            </div>
 
-            <div class="slidervideo">
-                <div class="slider">
-                    <img src="vector/Slide2PINK.svg" alt="newsletter slide">
+                    <div class="platforms">
+                        <img src="vector/PC.svg" alt="Browse games by PC">
+                        <img src="vector/Playstation.svg" alt="Browse games by PlayStation">
+                        <img src="vector/xbox.svg" alt="Browse games by Xbox">
+                        <img src="vector/Nintendo.svg" alt="Browse games by Nintendo">
+                    </div>
+                    
+                    
                 </div>
-                <div class="video">
-                    <iframe width="450" height="200" src="https://www.youtube.com/embed/8X2kIfS6fb8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    
+                <!--
+                    <div class="slidervideo">
+                    <div class="slider">
+                        <img src="vector/Slide2PINK.svg" alt="newsletter slide">
+                    </div>
+                    <div class="video">
+                        <iframe width="450" height="200" src="https://www.youtube.com/embed/8X2kIfS6fb8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
                 </div>
-            </div>
-
+           
+        -->
+     </section>
             <section class="cat">
                 <h2>Featured</h2>
                 <button class="viewall" type="button">
@@ -247,19 +255,20 @@
         </div> 
         </div>
 
-        <section class="newsletter">
-            <div class="newslettertext">
-            <p><b>Subscribe to our Newsletter to get 15% off your next order!</b><br>
-                You’ll also be the first to know about new releases and special offers.</p>
+        <section class="testnewsletter">
+            <div class="testnewslettertext">
+            <p><b>Subscribe to our Newsletter to get 15% off your next order!</b></p>
+            <p>You’ll also be the first to know about new releases and special offers.</p>
             </div>
-            <div class="newsletterinput">
-            <p class="enteremail">Enter your email address:</p>
-                <input class="inputemail" type="email" placeholder="gamehub@test.com">
-                <button class="Subscribe" type="button">
+            <div class="testnewsletterinput">
+                <label for="mail">Enter your email address:</label>
+                <input class="testinputemail" type="email" placeholder="gamehub@test.com">
+            </div>
+            <button class="Subscribe" type="button">
                     <b>SUBSCRIBE</b>
                 </button>
-            </div>
         </section>
+
         </div>
 
         <div class="footer">
