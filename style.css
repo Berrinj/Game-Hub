@@ -215,6 +215,10 @@ body {
     
     }
 
+    .games-container:hover {
+      background-color: #CFA7A5;
+    }
+
     a:hover, a:visited, a:link, a:active {
         text-decoration: none;
     }
@@ -412,45 +416,57 @@ body {
 
       /*PRODUCT PAGE*/
 
+      .breadcrumbs {
+        text-align: center;
+        font-size: 0.75rem;
+        font-family: arial;
+        margin-top: 20px;
+      }
+
+      .breadcrumbs a {
+        color: #CFA7A5;
+      }
+
     .productpagecontainer {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        width: 840px;
+        max-width: 840px;
         background: #fff;
         margin: auto;
         padding-bottom: 31px;
+        margin-top: 34px;
+      }
+
+      .mainimg {
+        float: left;
+        max-width: 254px;
+        margin-left: 97px;
+        margin-right: 25px;
         margin-top: 44px;
       }
 
       .productpagecontainer h1 {
         display: flex;
-        width: 368px;
+        max-width: 368px;
         margin-top: 44px;
         margin-right: 97px;
         justify-content: center;
-        width: 350px;
       }
+
       .productpagecontainer h2 {
         display: flex;
-        width: 368px;
+        max-width: 368px;
         justify-content: center;
-        margin-bottom: 0;
+        margin-bottom: 7px;
+        margin-top: 15px;
       }
 
       .productpagecontainer p {
         display: flex;
         flex-wrap: wrap;
-        width: 368px;
+        max-width: 368px;
         margin-right: 97px;
-      }
-
-       .mainimg {
-        float: left;
-        width: 254px;
-        margin-left: 97px;
-        margin-right: 25px;
-        margin-top: 44px;
       }
 
       .cartbuyheart button {
@@ -477,7 +493,7 @@ body {
         width: 51px;
       }
       .description {
-        width: 645px;
+        max-width: 100;
     }
       .description h3{
         margin-top: 20px;
@@ -486,7 +502,7 @@ body {
 
       .description p {
         margin-left: 97px;
-        width: 645px;
+        max-width: 100%;
       }
 
       #text {
@@ -506,7 +522,7 @@ body {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        width: 742px;
+        max-width: 742px;
       }
       .visuals h3{
         margin-top: 20px;
@@ -514,12 +530,12 @@ body {
         margin-bottom: 10px;
       }
       .visuals iframe {
-        width: 742px;
+        max-width: 742px;
         padding-left: 97px;
       }
       .visuals .img1 {
         margin-left: 97px;
-        width: 200px;
+        max-width: 200px;
       }
 
       .visuals, .img1, .img2, .img3 {
@@ -545,7 +561,7 @@ body {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        width: 742px;
+        max-width: 742px;
         }
         
       .reviews h3{
@@ -726,7 +742,7 @@ body {
 
      
         fieldset {
-            width: 465px;
+            max-width: 465px;
             margin: auto;
             margin-bottom: 10px;
             border: none;
@@ -932,3 +948,17 @@ body {
 
      /*CONTACT*/
      
+     textarea {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        font-size: 16px;
+     }
+
+     .form .select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+     }
