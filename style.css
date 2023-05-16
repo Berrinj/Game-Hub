@@ -745,7 +745,7 @@ body {
             max-width: 465px;
             margin: auto;
             margin-bottom: 10px;
-            border: none;
+            border-radius: 10px;
         }
 
         fieldset input {
@@ -948,17 +948,66 @@ body {
 
      /*CONTACT*/
      
+     .contactintro {
+      display: block;
+      max-width: 840px;
+      margin: auto;
+      text-align: center;
+     }
+
+   
      textarea {
         width: 100%;
         padding: 12px 20px;
         margin: 8px 0;
         box-sizing: border-box;
         font-size: 16px;
+        border-radius: 10px;
      }
 
-     .form .select {
+     #regarding {
         width: 100%;
-        padding: 12px 20px;
+        padding: 12px 15px;
         margin: 8px 0;
         box-sizing: border-box;
+        border-radius: 10px;
+     }
+
+     fieldset button {
+      float: right;
+     }
+     
+     .contactinfo {
+      max-width: 800px;
+      text-align: center;
+      margin: auto;
+     }
+
+     .emailbox {
+      font-size: 1.2rem;
+        background-color: #1B203D;
+        color: #fff;
+        display: flex;
+        flex-direction: row;
+        max-width: 500px;
+        height: 80px;
+        justify-content: center;
+        gap: 10px;
+        border-radius: 10px;
+        align-items: center;
+        margin: auto;
+        margin-bottom: 40px;
+     }
+
+     .emailbox a {
+        color: #CFA7A5;
+        text-decoration: none;
+     }
+
+     .emailbox a:hover {
+      color: #e6d2d1;
+     }
+
+     .contactinfo img {
+      margin: 0 25px 15px 25px;
      }
