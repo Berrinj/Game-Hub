@@ -1083,9 +1083,8 @@ body {
       justify-content: space-between;
      }
 
-     .heart {
+     .hearticon {
       height: 25px;
-      width: 25px;
      }
      .wishlist2 {
       max-width: 200px;
