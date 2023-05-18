@@ -10,7 +10,7 @@
 }
 
 .header img {
-    width: 414px;
+    max-width: 414px;
     margin: auto;
     padding-top: 17px;
     display: block;
@@ -469,12 +469,21 @@ body {
         margin-right: 97px;
       }
 
+      .cartbuyheart {
+         align-items: center;
+         height: 35px;
+      }
       .cartbuyheart button {
         background-color: #CFA7A5;
         height: 35px;
         border: 0;
         border-radius: 7px;
         cursor: pointer;
+      }
+
+      .cartbuyheart img {
+        align-items: center;
+        height: 25px;
       }
 
       .cart {
@@ -1010,4 +1019,74 @@ body {
 
      .contactinfo img {
       margin: 0 25px 15px 25px;
+     }
+
+     /* WISHLIST */
+
+     .wishlistpagecontainer {
+      max-width: 840px;
+      background-color: #fff;
+      margin: auto;
+      margin-top: 40px;
+     }
+
+     .wishlist-heading {
+      max-width: 840px;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: space-between;
+        align-items: center;
+     }
+
+     .wishlist-heading h1, h4 {
+      margin-bottom: 0;
+      margin-left: 2%;
+      margin-right: 2%;
+     }
+
+     .wishlistgames {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      
+     }
+     .wishlistgames img {
+      max-width: 200px;
+      margin-bottom: 0;
+      cursor: pointer;
+     }
+
+     .wishlistgames h2{
+      margin-top: 0;
+      color:#1B203D;
+      text-decoration: none;
+      cursor: pointer;
+     }
+
+     .wishlistgames p{
+      margin-top: 0;
+      color:#1B203D;
+      text-decoration: none;
+      cursor: pointer;
+     }
+
+     .wishlist1 {
+      max-width: 200px;
+     }
+
+     .nameheart {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+     }
+
+     .heart {
+      height: 25px;
+      width: 25px;
+     }
+     .wishlist2 {
+      max-width: 200px;
      }

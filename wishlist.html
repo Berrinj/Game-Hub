@@ -6,8 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="Marte Lilleberre">
         <meta name="dcterms.created" content="sat., 29 apr 2023 18:59:56 GMT">
-        <meta name="description" content="Contact Game Hub">
-        <meta name="keywords" content="Game Hub | Contact">
+        <meta name="description" content="Your Game Hub wishlist">
+        <meta name="keywords" content="Game Hub | Wishlist">
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
@@ -26,7 +26,7 @@
                         <img class="vector" src="vector/cart.svg" alt="cart icon"><br>
                         <a href="cart.html">My Cart</a><br>
                         <img class="vector" src="vector/wishlist.svg" alt="wishlist icon"><br>
-                        <a href="wishlist">My Wishlist</a><br>
+                        <a href="wishlist.html">My Wishlist</a><br>
                         <img class="vector" src="vector/info.svg" alt="about icon"><br>
                         <a href="about.html">About Us</a><br>
                         <img class="vector" src="vector/more.svg"alt="hamburger menu icon"><br>
@@ -36,58 +36,51 @@
             
     
             <div class="main">
-                <section class="contactintro">
-                <h1>Hi there! We’re here to help you!</h1>
-                <p><b>Are you having any problems or some questions you need answered?</b></p>
-                <p>Don’t hesitate to get in touch! We are here to help you and answer any question you might have. Contact us by filling out the form below this text and we’ll be sure to get back to you as soon as possible. A ticket will be sent to your email after the form is submitted.</p>
+                <section class="maintop-background">
+                    <div class="topmenu">
+                         
+                            <form action="#" class="searchbar">
+                                <input type="text" placeholder="Search for games">
+                                <button type="submit"><img src="vector/search.svg" alt="search icon"></button>
+                            </form>
+                        
+                        <div class="platforms">
+                            <img src="vector/PC.svg" alt="Browse games by PC">
+                            <img src="vector/Playstation.svg" alt="Browse games by PlayStation">
+                            <img src="vector/xbox.svg" alt="Browse games by Xbox">
+                            <img src="vector/Nintendo.svg" alt="Browse games by Nintendo">
+                        </div>
+                       
+                    </div>
                 </section>
-                <form action="#" method="POST">
-                    <fieldset>
-                        <legend>Please fill out the form</legend>
-                        <label for="name">Name:*</label>
-                        <input type="text" name="name" id="name" required>
-                        <label for="email">Email:*</label>
-                        <input type="email" name="email" id="email" required>
-                        <label for="order_number">Order Number:</label>
-                        <input type="number" name="order_number" id="ordernumber">
-                        <label for="regarding">Regarding:*</label>
-                        <select id="regarding" name="regarding">
-                        <option value="">Please choose an option</option>
-                        <option value="download_issue">Problems downloading order</option>
-                        <option value="payment_issue">Payment issues</option>
-                        <option value="inventory_question">Questions about inventory</option>
-                        <option value="feedback">Feedback</option>
-                        <option value="other">Other</option>
-                        </select>
-                        <label for="subject">Subject:*</label>
-                        <input type="text" name="subject" id="subject" required>   
-                        <label for="message">Message:*</label>
-                        <textarea name="message" id="message" required></textarea>  
-                        <button type="submit">Send</button>
-                     </fieldset>
-                </form>
-                <!--<div class="placeorder">
-                    <a href="#">
-                        <button class="placeorderbutton" type="submit">
-                        <b>Send</b>
-                        </button>
-                    </a>
-                </div>-->
-                <section class="contactinfo">
-                <p><em>If by any chance the form isn’t working you can send us an email using the one provided here:</em></p>
-                <div class="emailbox">
-                    <p>Email:</p>
-                    <a href="#">
-                    <p>customerservice@gamehub.com</p></a>
+               <div class="wishlistpagecontainer">
+                <div class="wishlist-heading">
+                <h1>Wishlist</h1>
+                <h4>2 items</h4>
                 </div>
+                <hr>
+                <div class="wishlistgames">
+                <div class="wishlist1">
+                <a href="productpage.html">
+                <img src="Games/GameHub_covers9-72.jpg">
+                <div class="nameheart">
                 
-                <p><em>or send us a direct message:</em></p>
-                <img src="vector/facebook.svg" alt="facebook">
-                <img src="vector/twitter.svg" alt="twitter">
-                <img src="vector/instagram.svg" alt="instagram">
-
-                <p>We’ll get back to you within 24 hours</p>
-                 </section>
+                <h2>Cyberpunk</h2>
+                <img src="vector/wishlist.svg" class="heart">
+                </div>
+                <p>-Available for PS4, PS5, Nintendo Switch, XBOX One & XBOX Series X
+                -Instant download</p></a>
+                <button type="button">Buy Now</button>
+            </div>
+                <div class="wishlist2">
+                <img src="Games/GameHub_covers3-72.jpg">
+                <h2>Black</h2>
+                <p>-Available for PS4, PS5, XBOX One, XBOX Series X and PC.
+                    -Instant download</p>
+                    <button type="button">Buy Now</button>
+            </div>
+               </div>
+            </div>
                 </div>
                     
                 </div>
