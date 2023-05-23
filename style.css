@@ -507,11 +507,12 @@ body {
         width: 51px;
       }
       .description {
-        max-width: 100;
+        max-width: 100%;
     }
       .description h3{
         margin-top: 20px;
         margin-left: 10%;
+        clear: both;
       }
 
       .description p {
@@ -543,11 +544,13 @@ body {
         margin-left: 10%;
         margin-bottom: 10px;
       }
+ 
       .visuals iframe {
         max-width: 100%;
         margin-left: 10%;
         margin-right: 10%;
       }
+
       .visuals .img1 {
         margin-left: 10%;
         max-width: 200px;
@@ -556,6 +559,7 @@ body {
       .visuals, .img1, .img2, .img3 {
         margin-top: 11px;
         justify-content: space-between;
+        flex-wrap: wrap;
       }
       
       .img1 {
@@ -1123,7 +1127,7 @@ body {
      .testnewsletter{
       height: auto;
      }
-    
+
 
      @media only screen and (min-width:600px) and (max-width:1000px){
       .testnewslettertext{
@@ -1142,7 +1146,7 @@ body {
     
      }
 
-     @media (max-width: 727px) {
+     @media (max-width: 834px) {
       .header, .welcomemessage {
         display: none;
       }
@@ -1193,6 +1197,7 @@ body {
         display: flex;
         flex-direction: column;
         max-width: 100%;
+
       }
     .productpagecontainer h1 {
       display: flex;
@@ -1221,17 +1226,17 @@ body {
 
 
     .description h3 {
-      margin-left: 2%;
+      margin-left: 5%;
     }
     #toggle {
-      margin-left: 2%;
+      margin-left: 5%;
     }
     .visuals {
       display: flex;
       flex-direction: column;
     }
     .visuals h3{
-      margin-left: 2%;
+      margin-left: 5%;
     }
     .visuals .img1, .img2, .img3{
       margin: auto;
@@ -1242,14 +1247,16 @@ body {
       padding: 0;
       max-width: 350px;
       align-self: center;
+      margin:auto;
       margin-bottom: 10px;
     }
 
     .reviews h3{
-      margin-left: 2%;
+      margin-left: 5%;
     }
     .review1, .review2 {
-      margin-left: 2%;
+      margin:auto;
+      margin-top: 2%;
     }
 .cartbuyheart {
   display: flex;
@@ -1262,4 +1269,3 @@ body {
     }
  
      }
-
