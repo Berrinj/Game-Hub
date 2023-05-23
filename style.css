@@ -507,12 +507,11 @@ body {
         width: 51px;
       }
       .description {
-        max-width: 100%;
+        max-width: 100;
     }
       .description h3{
         margin-top: 20px;
         margin-left: 10%;
-        clear: both;
       }
 
       .description p {
@@ -544,13 +543,11 @@ body {
         margin-left: 10%;
         margin-bottom: 10px;
       }
- 
       .visuals iframe {
         max-width: 100%;
         margin-left: 10%;
         margin-right: 10%;
       }
-
       .visuals .img1 {
         margin-left: 10%;
         max-width: 200px;
@@ -559,7 +556,6 @@ body {
       .visuals, .img1, .img2, .img3 {
         margin-top: 11px;
         justify-content: space-between;
-        flex-wrap: wrap;
       }
       
       .img1 {
@@ -669,7 +665,7 @@ body {
 
       .continue-shopping {
         display: flex;
-        margin-left: 400px;
+        margin-left: 10%;
         gap: 10px;
         color:#1B203D;
       }
@@ -718,7 +714,7 @@ body {
       }
 
       .gotopayment {
-        width: 840px;
+        max-width: 840px;
         margin: auto;
       }
   .gotopaymentbutton {
@@ -737,7 +733,7 @@ body {
       .total {
         display: flex;
         flex-direction: row;
-        width: 840px;
+        max-width: 840px;
         margin: auto;
         justify-content: space-between;
       }
@@ -885,14 +881,14 @@ body {
      
 
       .confirmationcontent {
-        width: 608px;
+        max-width: 608px;
         margin: auto;
         text-align: center;
         margin-bottom: 40px;
       }
 
       .shopmore {
-        width: 465px;
+        max-width: 465px;
         display: flex;
         justify-content: center;
         margin: auto;
@@ -960,7 +956,9 @@ body {
         margin-left: 10px;
         cursor: pointer;
         box-shadow: 0px 1px 2px 0px #1B203D;
-        align-self: center;
+        margin-right: 10%;
+        align-self: flex-end;
+        margin-bottom: 16px;
     }
     
      .testinputemail {
@@ -1125,7 +1123,7 @@ body {
      .testnewsletter{
       height: auto;
      }
-
+    
 
      @media only screen and (min-width:600px) and (max-width:1000px){
       .testnewslettertext{
@@ -1144,8 +1142,7 @@ body {
     
      }
 
-
-     @media (max-width: 834px) {
+     @media (max-width: 824px) {
       .header, .welcomemessage {
         display: none;
       }
@@ -1176,9 +1173,9 @@ body {
       margin-bottom: 20px;
      }
     
-     .testnewsletter {
+    .testnewsletter {
       display: none;
-     }
+    }
 
      /*PRODUCKTPAGE MOBILE*/
 
@@ -1196,7 +1193,6 @@ body {
         display: flex;
         flex-direction: column;
         max-width: 100%;
-
       }
     .productpagecontainer h1 {
       display: flex;
@@ -1246,7 +1242,6 @@ body {
       padding: 0;
       max-width: 350px;
       align-self: center;
-      margin:auto;
       margin-bottom: 10px;
     }
 
@@ -1254,8 +1249,11 @@ body {
       margin-left: 5%;
     }
     .review1, .review2 {
-      margin:auto;
-      margin-top: 2%;
+      margin: auto;
+    }
+
+    .review1 {
+      margin-bottom: 1%;
     }
 .cartbuyheart {
   display: flex;
@@ -1267,4 +1265,13 @@ body {
       display: none;
     }
  
+
+    /*CART*/
+    .continue-shopping {
+      margin-left: 5%;
+    }
+    .shopping-cart img {
+      margin-left: 10%;
+    }
      }
+
