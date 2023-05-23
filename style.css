@@ -960,9 +960,7 @@ body {
         margin-left: 10px;
         cursor: pointer;
         box-shadow: 0px 1px 2px 0px #1B203D;
-        margin-right: 10%;
-        align-self: flex-end;
-        margin-bottom: 16px;
+        align-self: center;
     }
     
      .testinputemail {
@@ -1145,11 +1143,8 @@ body {
       }
     
      }
-@media (max-width: 700px) {
-  .testnewsletter {
-    display: none;
-  }
-}
+
+
      @media (max-width: 834px) {
       .header, .welcomemessage {
         display: none;
@@ -1181,7 +1176,9 @@ body {
       margin-bottom: 20px;
      }
     
- 
+     .testnewsletter {
+      display: none;
+     }
 
      /*PRODUCKTPAGE MOBILE*/
 
