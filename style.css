@@ -93,6 +93,7 @@ body {
         color: #1B203D;
         font-family: Inter, Arial;
         text-decoration: none;
+        display: block;
     }
 
 
