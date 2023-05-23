@@ -443,7 +443,7 @@ body {
       .mainimg {
         float: left;
         max-width: 254px;
-        margin-left: 97px;
+        margin-left: 10%;
         margin-right: 25px;
         margin-top: 44px;
       }
@@ -510,11 +510,11 @@ body {
     }
       .description h3{
         margin-top: 20px;
-        margin-left: 97px;
+        margin-left: 10%;
       }
 
       .description p {
-        margin-left: 97px;
+        margin-left: 10%;
         max-width: 100%;
       }
 
@@ -523,7 +523,7 @@ body {
       }
 
       #toggle {
-        margin-left: 97px;
+        margin-left: 10%;
         border: 0;
         background-color: transparent;
         padding: 0;
@@ -535,19 +535,20 @@ body {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        max-width: 742px;
+        max-width: 100%;
       }
       .visuals h3{
         margin-top: 20px;
-        margin-left: 97px;
+        margin-left: 10%;
         margin-bottom: 10px;
       }
       .visuals iframe {
-        max-width: 742px;
-        padding-left: 97px;
+        max-width: 100%;
+        margin-left: 10%;
+        margin-right: 10%;
       }
       .visuals .img1 {
-        margin-left: 97px;
+        margin-left: 10%;
         max-width: 200px;
       }
 
@@ -568,30 +569,35 @@ body {
       .img3 {
         box-shadow: 0px 1px 2px 0px #1B203D;
         cursor: pointer;
+        margin-right: 10%;
       }
 
       .reviews {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        max-width: 742px;
+        max-width: 100%;
         }
         
       .reviews h3{
         margin-top: 20px;
-        margin-left: 97px;
+        margin-left: 10%;
         width: 100%;
         margin-bottom: 10px;
       }
 
       .review1 {
-        margin-left: 97px;
+        margin-left: 10%;
       }
 
       .reviews, .review1, .review2 {
         justify-content: space-between;
       }
-     
+
+      .review2 {
+        margin-right: 10%;
+      }
+
       .viewallreviews {
         height: 22px;
         width: 80px;
@@ -603,7 +609,7 @@ body {
         box-shadow: 2px 3px 5px 0px #BAC5CF;
         cursor: pointer;
         float: right;
-        margin-right: 80px;
+        margin-right: 10%;
       }
       .viewallreviews:hover {
         background-color: #fff;
@@ -1132,10 +1138,10 @@ body {
       .newsletterall{
         flex-direction: column;
       }
-      
+    
      }
 
-     @media (max-width: 659px) {
+     @media (max-width: 727px) {
       .header, .welcomemessage {
         display: none;
       }
@@ -1169,5 +1175,90 @@ body {
     .testnewsletter {
       display: none;
     }
+
+     /*PRODUCKTPAGE MOBILE*/
+
+     .productpagecontainer {
+      max-width: 500px;
+      min-width: 400px;
+     }
+    .mainimg {
+      max-width: 254px;
+      margin: auto;
+      margin-top: 44px;
+    }
+
+      .productquickinfo {
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+      }
+    .productpagecontainer h1 {
+      display: flex;
+      max-width: 100%;
+      margin-top: 10px;
+      margin: auto;
+    }
+
+    .productpagecontainer h2 {
+      display: flex;
+      max-width: 100%;
+      justify-content: center;
+      margin-bottom: 7px;
+      margin-top: 15px;
+    }
+
+    .productpagecontainer p {
+      display: flex;
+      margin: auto;
+      flex-wrap: wrap;
+      max-width: 100%;
+      padding-left: 5%;
+      padding-right: 5%;
+    }
+   
+
+
+    .description h3 {
+      margin-left: 2%;
+    }
+    #toggle {
+      margin-left: 2%;
+    }
+    .visuals {
+      display: flex;
+      flex-direction: column;
+    }
+    .visuals h3{
+      margin-left: 2%;
+    }
+    .visuals .img1, .img2, .img3{
+      margin: auto;
+      max-width: 200px;
+      margin-bottom: 10px;
+    }
+    .visuals iframe {
+      padding: 0;
+      max-width: 350px;
+      align-self: center;
+      margin-bottom: 10px;
+    }
+
+    .reviews h3{
+      margin-left: 2%;
+    }
+    .review1, .review2 {
+      margin-left: 2%;
+    }
+.cartbuyheart {
+  display: flex;
+  justify-content: center;
+}
+
+
+    .cartbuyheart .heart, .cart {
+      display: none;
+    }
+ 
      }
 
