@@ -1093,10 +1093,15 @@ body {
 
      .wishlistpagecontainer {
       max-width: 840px;
-      /*background-color: #fff;*/
+      background-color: #fff;
       margin: auto;
       margin-top: 40px;
       border-radius: 10px;
+     }
+     .wishlistpagecontainer>p {
+      text-align: center;
+      padding-bottom: 10px;
+      margin: 0;
      }
 
      .wishlist-heading {
@@ -1120,7 +1125,7 @@ body {
       flex-direction: row;
       justify-content: space-around;
       flex-wrap: wrap;
-      margin-bottom: 44px;
+      /*margin-bottom: 44px;*/
       padding-bottom: 20px;
       
      }
@@ -1446,12 +1451,15 @@ body {
     .progress img {
       display: none;
     }
-
+    .progress b {
+      color: #1B203D;
+    }
     .mobilearrow {
       display: inline;
     }
     .progress li{
       font-size: 0.8rem;
+      color: #CFA7A5;
     }
     .shopping-cart-header {
       margin-left: 2%;
@@ -1476,5 +1484,12 @@ body {
     .placeorder {
       max-width: 100%;
     }
+
+    /* CONTACT*/
+    .contactintro {
+      margin-left: 5%;
+      margin-right: 5%;
+    }
+
      }
 
