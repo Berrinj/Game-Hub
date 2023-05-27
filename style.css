@@ -1175,7 +1175,7 @@ body {
         top: 0;
         background-color: #CFA7A5;
         width: 100vw;
-        height: 80px;
+        height: 70px;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -1186,7 +1186,7 @@ body {
       }*/
       .small-logo {
         padding-top: 0;
-        scale: 160%;
+        scale: 140%;
         order: 3;
       }
       .profilevector {
@@ -1238,8 +1238,8 @@ body {
 
       .main {
         position: relative;
-        top:80px;
-        margin-bottom: 80px;
+        top: 70px;
+        margin-bottom: 70px;
       }
       .topmenu {
         background-color: #BAC5CF;
