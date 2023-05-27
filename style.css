@@ -93,8 +93,10 @@ body {
         color: #1B203D;
         font-family: Inter, Arial;
         text-decoration: none;
-        display: block;
-    }
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+            }
 
 
     .small-logo {
@@ -103,9 +105,15 @@ body {
 
     }
 
-    .vector {
+    .profilevector, .cartvector, .wishlistvector, .aboutvector, .morevector  {
         padding-top: 28px;
+        display: block;
+        height: 35px;
+        margin-bottom: 5px;
 
+    }
+    .morevector {
+      height: 25px;
     }
 
     ul li {
@@ -1173,18 +1181,61 @@ body {
         justify-content: space-between;
       }
 
-      .leftnav a {
+      /*.leftnav a {
         display: none;
-      }
+      }*/
       .small-logo {
         padding-top: 0;
-        margin-left: 10px;
+        scale: 160%;
+        order: 3;
       }
-      .vector {
+      .profilevector {
         padding-top: 0;
-        height: 30px;
-        margin-right: 10px;
+        height: 40px;
+        
       }
+
+      .morevector {
+        padding: 0;
+        height: 30px;
+      }
+
+      .mobileprofile {
+        order: 2;
+        font-size: 0;
+      }
+
+      .mobilecart {
+        order: 5;
+        margin-right: 2%;
+        font-size: 0;
+      }
+
+      .mobilewishlist {
+        order: 4;
+        font-size: 0;
+      }
+
+      .mobilemore {
+        order: 1;
+        margin-left: 2%;
+        font-size: 0;
+      }
+
+      .cartvector {
+        padding-top: 0;
+        height: 40px;
+      }
+
+      .wishlistvector {
+        padding-top: 0;
+        height: 40px;
+      }
+
+      a.mobileabout{
+        display: none;
+      }
+
       .main {
         position: relative;
         top:80px;
