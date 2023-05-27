@@ -102,6 +102,7 @@ body {
     .small-logo {
         width: 68px;
         padding-top: 15px;
+        margin: auto;
 
     }
 
@@ -677,6 +678,9 @@ body {
 
       /*CART*/
 
+      /*.leftnav {
+        display: none;
+      }*/
       .continue-shopping {
         display: flex;
         margin-left: 10%;
@@ -1189,15 +1193,29 @@ body {
         scale: 140%;
         order: 3;
       }
+      .mobilelogo {
+        padding-top: 0;
+        order: 3;
+        
+      }
       .profilevector {
         padding-top: 0;
-        height: 40px;
-        
+        height: 35px;
       }
 
       .morevector {
         padding: 0;
         height: 30px;
+      }
+
+      .cartvector {
+        padding-top: 0;
+        height: 35px;
+      }
+
+      .wishlistvector {
+        padding-top: 0;
+        height: 35px;
       }
 
       .mobileprofile {
@@ -1207,7 +1225,7 @@ body {
 
       .mobilecart {
         order: 5;
-        margin-right: 2%;
+        margin-right: 4%;
         font-size: 0;
       }
 
@@ -1218,20 +1236,9 @@ body {
 
       .mobilemore {
         order: 1;
-        margin-left: 2%;
+        margin-left: 4%;
         font-size: 0;
       }
-
-      .cartvector {
-        padding-top: 0;
-        height: 40px;
-      }
-
-      .wishlistvector {
-        padding-top: 0;
-        height: 40px;
-      }
-
       a.mobileabout{
         display: none;
       }
@@ -1252,7 +1259,7 @@ body {
       }*/
 
     .platforms {
-      height: 18px;
+      height: 17px;
       margin-left: 2%;
       margin-right: 2%;
     }
@@ -1395,6 +1402,15 @@ body {
     }
     .shopping-cart img {
       margin-left: 10%;
+    }
+
+    .total {
+      margin-left: 5%;
+      margin-right: 5%;
+    }
+    .gotopayment {
+      display: flex;
+      justify-content: center;
     }
      }
 
