@@ -1471,5 +1471,10 @@ body {
     .gotopaymentbutton {
       max-width: 300px;
     }
+
+    /*  CHECKOUT  */
+    .placeorder {
+      max-width: 100%;
+    }
      }
 
