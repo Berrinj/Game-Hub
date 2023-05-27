@@ -42,9 +42,11 @@
                 <a href="index.html" class="continue-shopping"><img src="vector/arrowleft.svg" alt="arrow"><p>Continue shopping</p></a>
                 <div class="progress">
                 <ul>
-                    <li>Shopping Cart</li>
+                    <a href="cart.html"><li>Shopping Cart</li></a>
+                    <li class="mobilearrow"> > </li>
                     <img src="vector/dottetlinearrow.svg" alt="arrow">
                     <li><b>Checkout</b></li>
+                    <li class="mobilearrow"> > </li>
                     <img src="vector/dottetlinearrow.svg" alt="arrow">
                     <li> Confirmation</li>
                 </ul>
@@ -77,8 +79,9 @@
                         <input type="email" id="mail" name="user_email" />
                       </li>
                       <li>
+                        <div class="tc">
                         <label for="terms">I accept the terms & conditions and confirm that I’ve read them. </label>
-                          <input type="checkbox" id="terms" name="checkbox_terms" />
+                          <input type="checkbox" id="terms" name="checkbox_terms" /></div>
                         </li>
                        <!--<li>
                         <label for="submit"></label>
@@ -108,18 +111,23 @@
 
                 <section class="testnewsletter">
                     <div class="newsletterall">
-                    <div class="testnewslettertext">
-                    <p><b>Subscribe to our Newsletter to get 15% off your next order!</b></p>
-                    <p>You’ll also be the first to know about new releases and special offers.</p>
+                        <div class="testnewslettertext">
+                            <p><b>Subscribe to our Newsletter to get 15% off your next order!</b></p>
+                            <p>You’ll also be the first to know about new releases and special offers.</p>
+                        </div>
+                        <div class="input-container">
+                            <div class="testnewsletterinput">
+                                <label for="mail">Enter your email address:</label>
+                                <input class="testinputemail" type="email" placeholder="gamehub@test.com">     
+                            </div>
+                            <button class="Subscribe" type="button">
+                                <b>SUBSCRIBE</b>
+                            </button>
+                        </div>
+                        
                     </div>
-                    <div class="testnewsletterinput">
-                        <label for="mail">Enter your email address:</label>
-                        <input class="testinputemail" type="email" placeholder="gamehub@test.com">
-                    </div>
-                    <button class="Subscribe" type="button">
-                            <b>SUBSCRIBE</b>
-                        </button>
-                    </div>
+                    
+                    
                 </section>
         
 

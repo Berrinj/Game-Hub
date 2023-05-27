@@ -164,6 +164,10 @@ body {
   
 }
 
+#searchbarinput {
+  padding: 0;
+
+}
 .platforms {
     width: 600px;
     height: 23px;
@@ -694,7 +698,11 @@ body {
         display: inline;
         margin-top: 0;
         padding-left: 0;
-    
+        font-size: 1rem;
+      }
+
+      .mobilearrow {
+        display: none;
       }
 
       .shopping-cart-header {
@@ -793,7 +801,35 @@ body {
         fieldset ul{
             padding: 0;
         }
-        fieldset input[type=text] {
+
+        input[type] {
+          width: 100%;
+          padding: 12px 20px;
+          margin: 8px 0;
+          box-sizing: border-box;
+        }
+
+      /*input[type="checkbox"] {
+        order: 2;
+        
+      }*/
+      .tc {
+        display: flex;
+        align-items: center;
+        
+      }
+      .tc label {
+        order: 2;
+      }
+      [type="checkbox"] {
+        order: 1;
+      }
+
+      #terms {
+        flex: 1;
+      }
+      
+       /* fieldset input[type=text] {
             width: 100%;
             padding: 12px 20px;
             margin: 8px 0;
@@ -819,7 +855,7 @@ body {
         padding: 12px 20px;
         margin: 8px 0;
         box-sizing: border-box;
-      }
+      }*/
 
 
   
@@ -1057,9 +1093,10 @@ body {
 
      .wishlistpagecontainer {
       max-width: 840px;
-      background-color: #fff;
+      /*background-color: #fff;*/
       margin: auto;
       margin-top: 40px;
+      border-radius: 10px;
      }
 
      .wishlist-heading {
@@ -1150,6 +1187,8 @@ body {
      }
     
 
+/* MEDIA QUERY */
+
      @media only screen and (min-width:600px) and (max-width:1000px){
       .testnewslettertext{
         width: auto;
@@ -1201,21 +1240,25 @@ body {
       .profilevector {
         padding-top: 0;
         height: 35px;
+        margin-bottom: 0;
       }
 
       .morevector {
         padding: 0;
         height: 30px;
+        margin-bottom: 0;
       }
 
       .cartvector {
         padding-top: 0;
         height: 35px;
+        margin-bottom: 0;
       }
 
       .wishlistvector {
         padding-top: 0;
         height: 35px;
+        margin-bottom: 0;
       }
 
       .mobileprofile {
@@ -1400,6 +1443,19 @@ body {
     .continue-shopping {
       margin-left: 5%;
     }
+    .progress img {
+      display: none;
+    }
+
+    .mobilearrow {
+      display: inline;
+    }
+    .progress li{
+      font-size: 0.8rem;
+    }
+    .shopping-cart-header {
+      margin-left: 2%;
+    }
     .shopping-cart img {
       margin-left: 10%;
     }
@@ -1411,6 +1467,9 @@ body {
     .gotopayment {
       display: flex;
       justify-content: center;
+    }
+    .gotopaymentbutton {
+      max-width: 300px;
     }
      }
 
