@@ -289,7 +289,7 @@ body {
 
 .promotext {
   max-width: 700px;
-  background-color: #000;
+  background-color: #00000094;
   height: auto;
   display: flex;
   align-self: center;
@@ -304,14 +304,21 @@ body {
   margin: auto;
   color:#fff;
   padding:20px 20px 0 20px;
+  letter-spacing: 0.1rem;
 }
 
 .promotext p {
-  color: #BAC5CF;
+  color: #fff;
   padding: 15px 15px 0px 15px;
   margin: 0;
 }
 
+.promo-p-one {
+  font-size: 1.2rem;
+}
+.promotext a {
+margin: auto;
+}
 .promo-redmore-button {
   max-width: 300px;
   min-width: 200px;
@@ -320,9 +327,13 @@ body {
   color: #fff;
   border-radius: 5px;
   border: none;
-  margin: auto;
-  margin-top: 10px;
+  margin-top: 20px;
+  cursor: pointer;
 }
+
+.promo-redmore-button:hover {
+  scale: 110%;
+} 
 
 .promobanner {
   width: 100%;
@@ -357,7 +368,8 @@ body {
     }
 
     .games-container:hover {
-      background-color: #CFA7A5;
+      /*background-color: #CFA7A5;*/
+      scale: 105%;
     }
 
     a:hover, a:visited, a:link, a:active {
@@ -764,7 +776,7 @@ body {
       
       /*ABOUT*/
 
-      .aboutheader {
+      /*.aboutheader {
         height: 224px;
         background-color: transparent;
         margin-top: 20px;
@@ -774,13 +786,14 @@ body {
         height: 200px;
         display: block;
         margin: auto;
-      }
+      }*/
 
       .aboutheading {
         max-width: 840px;
         margin: auto;
-        text-align: left;
         margin-top: 40px;
+        padding-left: 20px;
+        padding-right: 20px;
       }
 
       .aboutcontent {
@@ -837,6 +850,8 @@ body {
         flex-direction: row;
         align-items: flex-end;
         justify-content: space-between;
+        padding-left: 20px;
+        padding-right: 20px;
       }
       .shopping-cart-header h1, h4 {
         margin-bottom: 0;
@@ -847,6 +862,8 @@ body {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        padding-left: 20px;
+        padding-right: 20px;
       }
 
       .shopping-cart img {
@@ -871,6 +888,8 @@ body {
         max-width: 840px;
         justify-content: flex-end;
         margin-bottom: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
       }
 
       .promocodetext {
@@ -906,6 +925,8 @@ body {
       .gotopayment {
         max-width: 840px;
         margin: auto;
+        padding-left: 20px;
+        padding-right: 20px;
       }
   .gotopaymentbutton {
         background-color: #CFA7A5;
@@ -926,6 +947,8 @@ body {
         max-width: 840px;
         margin: auto;
         justify-content: space-between;
+        padding-left: 20px;
+        padding-right: 20px;
       }
       .total h3 {
         margin-top: 0;
@@ -1276,13 +1299,12 @@ body {
         flex-direction: row;
         align-items: flex-end;
         justify-content: space-between;
-        align-items: center;
+        margin-left: 2%;
+      margin-right: 2%;
      }
 
      .wishlist-heading h1, h4 {
       margin-bottom: 0;
-      margin-left: 2%;
-      margin-right: 2%;
      }
 
      .wishlistgames {
@@ -1490,7 +1512,16 @@ body {
       margin-left: 2%;
       margin-right: 2%;
     }
-
+    .promo-p-one {
+      font-size: 1rem;
+    }
+    .promo-p-two {
+      display: none;
+    }
+    .promobanner p {
+      font-size: 1rem;
+      letter-spacing: 0;
+    }
      .cat {
       margin: auto;
      }
@@ -1640,25 +1671,24 @@ body {
       font-size: 0.8rem;
       color: #CFA7A5;
     }
-    .shopping-cart-header {
+   /* .shopping-cart-header {
       margin-left: 2%;
     }
     .shopping-cart a {
       margin-left: 5%;
-    }
+    }*/
     
     .cartinfo {
-      margin-left: 5%;
-      margin-right: 2%;
       padding: 0;
     }
-    .total {
+    /*.total {
       margin-left: 2%;
       margin-right: 2%;
     }
     .promocodefield {
       margin-right: 2%;
-    }
+    }*/
+
     .gotopayment {
       display: flex;
       justify-content: center;
@@ -1682,6 +1712,7 @@ body {
       margin-left: 5%;
       margin-right: 5%;
     }
+/*ABOUT*/
 
      }
 
