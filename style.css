@@ -293,12 +293,12 @@ body {
   height: auto;
   display: flex;
   align-self: center;
-  border: 1px solid #fff;
+  border: 1px solid #ffffff94;
   margin-left: 5%;
   margin-right: 5%;
   flex-direction: column;
   padding-bottom: 10px;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 .promotext h1 {
   margin: auto;
@@ -325,7 +325,7 @@ margin: auto;
   height: 30px;
   background-color: #CFA7A5;
   color: #fff;
-  border-radius: 5px;
+  border-radius: 2px;
   border: none;
   margin-top: 20px;
   cursor: pointer;
@@ -333,6 +333,7 @@ margin: auto;
 
 .promo-redmore-button:hover {
   scale: 110%;
+  background-color: #a1817f;
 } 
 
 .promobanner {
@@ -623,6 +624,12 @@ margin: auto;
         flex-wrap: wrap;
         max-width: 368px;
         margin-right: 97px;
+      }
+      .pp-p-one {
+        font-weight: bold;
+      }
+      #instantdownload {
+        font-weight: bold;
       }
 
       .cartbuyheart {
@@ -996,21 +1003,15 @@ margin: auto;
           box-sizing: border-box;
         }
 
-      /*input[type="checkbox"] {
-        order: 2;
-        
-      }*/
       .tc {
         display: flex;
         align-items: center;
+        flex-direction: row-reverse;
         
       }
-      .tc label {
+     /* .tc label {
         order: 2;
-      }
-      [type="checkbox"] {
-        order: 1;
-      }
+      }*/
 
       #terms {
         flex: 1;
@@ -1361,6 +1362,22 @@ margin: auto;
 
      .profilecontent {
       height: 1000px;
+      max-width: 840px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: #fff;
+      margin-top: 34px;
+     }
+
+     .profilepic {
+      width: 200px; 
+      height: 200px; 
+      object-fit: cover;
+      border-radius: 50%;
+      justify-content: center;
+      margin-top: 30px;
      }
 /*TESTTESTTEST*/
      .newsletterall{
@@ -1568,13 +1585,14 @@ margin: auto;
      /*PRODUCKTPAGE MOBILE*/
 
      .productpagecontainer {
-      max-width: 500px;
+      max-width: 90%;
       min-width: 350px;
+      margin-top: 10px;
      }
     .mainimg {
-      max-width: 254px;
+      max-width: 90%;
       margin: auto;
-      margin-top: 44px;
+      margin-top: 20px;
     }
 
       .productquickinfo {
@@ -1582,11 +1600,13 @@ margin: auto;
         flex-direction: column;
         max-width: 100%;
       }
+
     .productpagecontainer h1 {
-      display: flex;
-      max-width: 100%;
+      align-self: flex-start;
       margin-top: 10px;
-      margin: auto;
+      padding-left: 5%;
+      margin: 0;
+      margin-bottom: 10px;
     }
 
     .productpagecontainer h2 {
@@ -1604,8 +1624,12 @@ margin: auto;
       max-width: 100%;
       padding-left: 5%;
       padding-right: 5%;
+      margin-bottom: 10px;
     }
    
+    #instantdownload {
+      margin: 0;
+    }
 
 
     .description h3 {
@@ -1679,7 +1703,7 @@ margin: auto;
     }*/
     
     .cartinfo {
-      padding: 0;
+      padding-left: 2px;
     }
     /*.total {
       margin-left: 2%;
@@ -1699,10 +1723,17 @@ margin: auto;
 
     /*  CHECKOUT  */
     .placeorder {
-      max-width: 100%;
+      max-width: 300px;
+      margin: auto;
+    }
+    .placeorderbutton {
+      max-width: 300px;
+    }
+    .paymentmethods {
+      max-width: 300px;
     }
 
-    /* CONTACT*/
+    /* CONTACT MOBILE*/
     .contactintro {
       margin-left: 5%;
       margin-right: 5%;
@@ -1711,6 +1742,10 @@ margin: auto;
     .contactinfo {
       margin-left: 5%;
       margin-right: 5%;
+    }
+
+    .emailbox {
+      font-size: 1rem;
     }
 /*ABOUT*/
 
