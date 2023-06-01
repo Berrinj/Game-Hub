@@ -182,8 +182,6 @@ body {
     }
     #menu-checkbox:checked ~ .hamburger-menu {
       display: block;
-
-
     }
 
 .topmenu {
@@ -236,6 +234,7 @@ body {
     width: 600px;
     height: 23px;
     display: flex;
+    align-items: baseline;
     flex-direction: row;
     justify-content: space-between;
     gap: 10px;
@@ -244,9 +243,47 @@ body {
     padding-top: 10px;
 
 }
-
-.platforms img {
+.platforms label {
+  display: flex;
+  align-items: center;
   cursor: pointer;
+}
+
+.pc-menu,
+#pc-checkbox,
+.ps-menu,
+#ps-checkbox,
+.xbox-menu,
+#xbox-checkbox,
+.ns-menu,
+#ns-checkbox {
+  display: none;
+}
+#pc-checkbox:checked ~ .pc-menu,
+#ps-checkbox:checked ~ .ps-menu,
+#xbox-checkbox:checked ~ .xbox-menu,
+#ns-checkbox:checked ~ .ns-menu {
+  display: block;
+}
+
+.ps-menu,
+.pc-menu,
+.xbox-menu,
+.ns-menu {
+  position: absolute;
+  left: 0; 
+  right: 0; 
+  margin-left: auto; 
+  margin-right: auto; 
+  width: 300px;
+  border: 1px solid #1b203d5e;
+  border-radius: 20px;
+  top: 72px;
+  background-color: #fff;
+  text-align: center;
+}
+.ps-menu p {
+  margin-top: 0;
 }
 
 /*.searchbar button img {
@@ -600,7 +637,6 @@ margin: auto;
         max-width: 254px;
         margin-left: 10%;
         margin-right: 25px;
-        margin-top: 44px;
       }
 
       .productpagecontainer h1 {
@@ -610,7 +646,9 @@ margin: auto;
         margin-right: 97px;
         justify-content: center;
       }
-
+      .pp-mobilevectors {
+        display: none;
+      }
       .productpagecontainer h2 {
         display: flex;
         max-width: 368px;
@@ -1518,6 +1556,7 @@ margin: auto;
         background-color: #BAC5CF;
         padding-bottom: 2%;
         box-shadow: 0 4px 2px -2px grey;
+        height: 80px;
       }
 
       /*.maintop-background {
@@ -1528,6 +1567,19 @@ margin: auto;
       height: 17px;
       margin-left: 2%;
       margin-right: 2%;
+      padding-top: 0;
+    }
+    .platforms p{
+      font-size: 0;
+    }
+
+   
+    .ps-menu,
+    .pc-menu,
+    .xbox-menu,
+    .ns-menu {
+      width: 150px;
+      top: 105px;
     }
     .promo-p-one {
       font-size: 1rem;
@@ -1606,7 +1658,21 @@ margin: auto;
       margin-top: 10px;
       padding-left: 5%;
       margin: 0;
-      margin-bottom: 10px;
+    }
+    .pp-title-icons {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 10px;
+      align-items: center;
+    }
+    .pp-mobilevectors {
+      display: block;
+      margin-right: 5%;
+    }
+    .pp-mobilevectors img {
+      height: 25px;
+      margin-left: 5px;
+      
     }
 
     .productpagecontainer h2 {
@@ -1625,11 +1691,13 @@ margin: auto;
       padding-left: 5%;
       padding-right: 5%;
       margin-bottom: 10px;
+      margin-top: 10px;
+      margin-left: 0;
     }
    
-    #instantdownload {
+    /*#instantdownload {
       margin: 0;
-    }
+    }*/
 
 
     .description h3 {
