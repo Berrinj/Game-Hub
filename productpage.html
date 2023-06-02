@@ -40,6 +40,10 @@
                             <a href="about.html">About us</a>
                             <a href="contact.html">Contact us</a>
                             <a href="#">Terms & Conditions</a>
+                            <div class="smallestscreen">
+                                <a href="profile.html">My profile page</a>
+                                <a href="wishlist.html">My wishlist</a>
+                            </div>
                             <a href="#" class="logout">Log out</a>
                         </div>
                 </nav>
@@ -55,12 +59,61 @@
                             <button type="submit"><img src="vector/search.svg" alt="search icon"></button>
                         </form>
                     
-                    <div class="platforms">
-                        <img src="vector/PC.svg" alt="Browse games by PC">
-                        <img src="vector/Playstation.svg" alt="Browse games by PlayStation">
-                        <img src="vector/xbox.svg" alt="Browse games by Xbox">
-                        <img src="vector/Nintendo.svg" alt="Browse games by Nintendo">
-                    </div>
+                        <div class="platforms">
+
+                            <input type="checkbox" id="pc-checkbox">
+                            <label for="pc-checkbox"><img src="vector/pcmini.svg" alt="Browse games by PC"><p class="labelname">PC</p></label>
+                                <div class="pc-menu">
+                                    <h4>Platforms</h4>
+                                    <hr>
+                                    <img src="vector/windows.svg">
+                                    <p>Windows 11</p>
+                                </div>
+
+                            <input type="checkbox" id="ps-checkbox">
+                            <label for="ps-checkbox"><img src="vector/psmini.svg" alt="Browse games by PlayStation"><p class="labelname">PlayStation</p></label>
+                                <div class="ps-menu">
+                                    <h4>Console</h4>
+                                    <hr>
+                                    <div class="consoles">
+                                        <div class="console-one">
+                                            <img src="vector/ps4.svg">
+                                            <p>PS4</p>
+                                        </div>
+                                        <div class="console-two">
+                                            <img src="vector/ps5.svg">
+                                            <p>PS5</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                    
+                            <input type="checkbox" id="xbox-checkbox">
+                            <label for="xbox-checkbox"><img src="vector/xboxmini.svg" alt="Browse games by Xbox"><p class="labelname">Xbox</p></label>
+                                <div class="xbox-menu">
+                                    <h4>Console</h4>
+                                    <hr>
+                                    <div class="consoles">
+                                        <div class="console-one">
+                                            <img src="vector/xboxicon.svg">
+                                            <p>XBOX One</p>
+                                        </div>
+                                        <div class="console-two">
+                                            <img src="vector/xboxicon.svg">
+                                            <p>XBOX X</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            <input type="checkbox" id="ns-checkbox">
+                            <label for="ns-checkbox"><img src="vector/nintendomini.svg" alt="Browse games by Nintendo"><p class="labelname">Nintendo</p></label>
+                                <div class="ns-menu">
+                                    <h4>Console</h4>
+                                    <hr>
+                                    <img src="vector/nintendoswitch.svg">
+                                    <p>Nintendo Switch</p>
+
+                                </div>
+                        </div>
                    
                 </div>
             </section>
@@ -97,17 +150,26 @@
                     </div>
                     <div class="description">
                     <h3>Description</h3>
-                    <p>Welcome to the world of intense fighting video games! Get ready to experience heart-pumping action and adrenaline-fueled battles that will keep you on the edge of your seat. In this game, you'll choose your fighter from a diverse roster of characters, each with their unique strengths and weaknesses.
+                    <p>Welcome to the world of intense fighting video games! Get ready to experience heart-pumping action and adrenaline-fueled battles that will keep you on the edge of your seat. In this game, you'll choose your fighter from a diverse roster of characters, each with their unique strengths and weaknesses.</p>
 
-                        As you step into the arena, you'll face off against opponents in one-on-one battles, unleashing a variety of moves and combos to take them down. From devastating punches and kicks to powerful throws and special abilities, you'll need to master each of your fighter's moves to emerge victorious.</p>
-                        <span id="text">
+                        <p>As you step into the arena, you'll face off against opponents in one-on-one battles, unleashing a variety of moves and combos to take them down. From devastating punches and kicks to powerful throws and special abilities, you'll need to master each of your fighter's moves to emerge victorious.</p>
+                        <!--<button id="toggle"><em>Read More</em></button>
+                                jacascript needed
+                            inspired by https://codepen.io/legendaryPower/pen/dvJQvB-->
+                            <span id="text">
                             As you progress through the game, you'll face tougher opponents, each with their unique fighting styles and strategies. You'll need to be quick on your feet, anticipating your opponent's moves and reacting with lightning-fast reflexes.
                             In addition to the main story mode, this game features a range of other modes to keep you entertained, including arcade mode, time attack, survival mode, and online multiplayer. Take on the best players from around the world and climb the rankings to become the ultimate champion.
                             
                             With stunning graphics, immersive sound effects, and intuitive controls, this fighting game will keep you coming back for more. Are you ready to enter the arena and show your opponents what you're made of? The fight begins now!</span>
-                            <button id="toggle"><em>Read More</em></button>
-                            <!--jacascript needed
-                            inspired by https://codepen.io/legendaryPower/pen/dvJQvB-->
+                            
+                            <input type="checkbox" id="readmore-checkbox">
+                            <label for="readmore-checkbox"><p class="label-readmore">Read More</p></label>
+                            <div class="readmore">
+                            <p>As you progress through the game, you'll face tougher opponents, each with their unique fighting styles and strategies. You'll need to be quick on your feet, anticipating your opponent's moves and reacting with lightning-fast reflexes.
+                            In addition to the main story mode, this game features a range of other modes to keep you entertained, including arcade mode, time attack, survival mode, and online multiplayer. Take on the best players from around the world and climb the rankings to become the ultimate champion.</p>
+
+                            <p>With stunning graphics, immersive sound effects, and intuitive controls, this fighting game will keep you coming back for more. Are you ready to enter the arena and show your opponents what you're made of? The fight begins now!</p>
+                            </div>
                         </div>
                         <div class="visuals">
                             <h3>Visuals</h3>

@@ -183,13 +183,16 @@ body {
     #menu-checkbox:checked ~ .hamburger-menu {
       display: block;
     }
+    .smallestscreen {
+      display: none;
+    }
 
 .topmenu {
   position: relative;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    align-items: center;
+    /*align-items: center;*/
     justify-content: center;
     padding-top: 5px;
     padding-left: 10px;
@@ -238,9 +241,8 @@ body {
     flex-direction: row;
     justify-content: space-between;
     gap: 10px;
-    margin-left: 20px;
-    margin-right: 10px;
-    padding-top: 10px;
+    margin: 10px;
+    align-self: center;
 
 }
 .platforms label {
@@ -282,10 +284,21 @@ body {
   background-color: #fff;
   text-align: center;
 }
-.ps-menu p {
+.pc-menu p,
+.ps-menu p,
+.xbox-menu p,
+.ns-menu p {
   margin-top: 0;
 }
 
+.consoles {
+  display: flex;
+  justify-content: space-around;
+}
+
+p.labelname {
+  margin: 0;
+}
 /*.searchbar button img {
     width: 20px;
 
@@ -719,6 +732,21 @@ margin: auto;
         max-width: 100%;
         margin-top: 10px;
       }
+      .readmore,
+    #readmore-checkbox {
+      display: none;
+    }
+    .label-readmore {
+      font-style: italic;
+      color: rgb(4, 4, 177);
+    }
+    #readmore-checkbox:checked ~ .readmore {
+      display: block;
+    }
+    #readmore-checkbox:checked ~ label {
+      display: none;
+      
+    }
 
       #text {
         display: none;
@@ -1378,6 +1406,7 @@ margin: auto;
 
      .wishlist1 {
       max-width: 200px;
+      margin-bottom: 20px;
      }
 
      .nameheart {
@@ -1416,6 +1445,13 @@ margin: auto;
       border-radius: 50%;
       justify-content: center;
       margin-top: 30px;
+     }
+
+    .profile-menu {
+        display: flex;
+        max-width: 400px;
+        min-width: 290px;
+        justify-content: space-around;
      }
 /*TESTTESTTEST*/
      .newsletterall{
@@ -1488,6 +1524,7 @@ margin: auto;
         box-shadow: 0 0 0 0;
         border-top: 1px solid #1B203D;
       }
+     
       .small-logo {
         padding-top: 0;
         scale: 140%;
@@ -1556,7 +1593,7 @@ margin: auto;
         background-color: #BAC5CF;
         padding-bottom: 2%;
         box-shadow: 0 4px 2px -2px grey;
-        height: 80px;
+        height: 95px;
       }
 
       /*.maintop-background {
@@ -1564,12 +1601,14 @@ margin: auto;
       }*/
 
     .platforms {
-      height: 17px;
-      margin-left: 2%;
-      margin-right: 2%;
+      height: auto;
       padding-top: 0;
+      justify-content: space-around;
+      margin-top: 5px;
     }
-    .platforms p{
+
+ 
+    p.labelname {
       font-size: 0;
     }
 
@@ -1578,8 +1617,8 @@ margin: auto;
     .pc-menu,
     .xbox-menu,
     .ns-menu {
-      width: 150px;
-      top: 105px;
+      width: 200px;
+      top: 115px;
     }
     .promo-p-one {
       font-size: 1rem;
@@ -1816,6 +1855,22 @@ margin: auto;
       font-size: 1rem;
     }
 /*ABOUT*/
+/*  PROFILE   */
 
      }
 
+     @media (max-width: 290px) {
+      .smallestscreen {
+        display: block;
+      }
+
+      .profilevector,
+      .wishlistvector {
+        display: none;
+      }
+
+      .gamesrow {
+        padding-left: 1%;
+        padding-right: 1%;
+      }
+    }
