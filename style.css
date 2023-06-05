@@ -400,6 +400,7 @@ margin: auto;
   color: #fff;
   letter-spacing: 0.2rem;
 }
+
 .gamesrow {
     display: flex;
     flex-direction: row;
@@ -766,40 +767,34 @@ margin: auto;
         flex-direction: row;
         flex-wrap: wrap;
         max-width: 100%;
+        margin-left: 10%;
+        margin-right: 10%;
       }
       .visuals h3{
         margin-top: 20px;
-        margin-left: 10%;
         margin-bottom: 10px;
       }
       .visuals iframe {
         max-width: 100%;
+      }
+
+      /*.game-images {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 11px;
         margin-left: 10%;
         margin-right: 10%;
-      }
-      .visuals .img1 {
-        margin-left: 10%;
-        max-width: 200px;
-      }
-
-      .visuals, .img1, .img2, .img3 {
-        margin-top: 11px;
-        justify-content: space-between;
-      }
+      }*/
       
-      .img1 {
-        box-shadow: 0px 1px 2px 0px #1B203D;
-        cursor: pointer;
-      }
-
-      .img2 {
-        box-shadow: 0px 1px 2px 0px #1B203D;
-        cursor: pointer;
-      }
+      .img1,
+      .img2,
       .img3 {
         box-shadow: 0px 1px 2px 0px #1B203D;
         cursor: pointer;
-        margin-right: 10%;
+        margin: auto;
+        margin-top: 11px;
+
       }
 
       .reviews {
@@ -820,7 +815,7 @@ margin: auto;
         margin-left: 10%;
       }
 
-      .reviews, .review1, .review2 {
+      .reviews {
         justify-content: space-between;
       }
 
@@ -1471,6 +1466,17 @@ margin: auto;
     
 
 /* MEDIA QUERY */
+    @media (min-width: 825px) and (max-width: 1341px) {
+      .ps-menu,
+      .pc-menu,
+      .xbox-menu,
+      .ns-menu { 
+        top: 115px;
+      }
+      .promotext {
+        margin: auto;
+      }
+     }
 
      @media only screen and (min-width:600px) and (max-width:1000px){
       .testnewslettertext{
@@ -1488,7 +1494,7 @@ margin: auto;
       }
     
      }
-
+     
      @media (max-width: 824px) {
       .header, .welcomemessage {
         display: none;
@@ -1749,31 +1755,32 @@ margin: auto;
       display: flex;
       flex-direction: column;
     }
-    .visuals h3{
+    .visuals {
       margin-left: 5%;
+      margin-right: 5%;
     }
+
     .visuals .img1, .img2, .img3{
       margin: auto;
       max-width: 200px;
-      margin-bottom: 10px;
+      margin-top: 10px;
     }
-    .visuals iframe {
+    /*.visuals iframe {
       padding: 0;
       max-width: 350px;
       margin: auto;
       margin-bottom: 10px;
-    }
+    }*/
 
     .reviews h3{
       margin-left: 5%;
     }
     .review1, .review2 {
       margin: auto;
+      margin-bottom: 5px;
     }
 
-    .review1 {
-      margin-bottom: 1%;
-    }
+   
 .cartbuyheart {
   display: flex;
   justify-content: center;
