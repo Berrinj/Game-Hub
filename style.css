@@ -677,11 +677,15 @@ margin: auto;
         max-width: 368px;
         margin-right: 97px;
       }
+      .productquickinfo {
+        margin-right: 0;
+      }
       .pp-p-one {
         font-weight: bold;
       }
-      #instantdownload {
+      #instantdownload{
         font-weight: bold;
+        margin-right: 0;
       }
 
       .cartbuyheart {
@@ -799,30 +803,22 @@ margin: auto;
 
       .reviews {
         display: flex;
-        flex-direction: row;
         flex-wrap: wrap;
         max-width: 100%;
+        margin-left: 10%;
+        margin-right: 10%;
         }
         
       .reviews h3{
         margin-top: 20px;
-        margin-left: 10%;
-        width: 100%;
         margin-bottom: 10px;
+        flex: 100vw;
       }
-
-      .review1 {
-        margin-left: 10%;
+      .reviews img {
+        width: 250px;
+        margin: auto;
       }
-
-      .reviews {
-        justify-content: space-between;
-      }
-
-      .review2 {
-        margin-right: 10%;
-      }
-
+    
       .viewallreviews {
         height: 22px;
         width: 80px;
@@ -1276,7 +1272,7 @@ margin: auto;
      
      .contactintro {
       display: block;
-      max-width: 840px;
+      max-width: 700px;
       margin: auto;
       text-align: center;
      }
@@ -1683,7 +1679,7 @@ margin: auto;
 
      .productpagecontainer {
       max-width: 90%;
-      min-width: 350px;
+      min-width: 250px;
       margin-top: 10px;
      }
     .mainimg {
@@ -1772,12 +1768,13 @@ margin: auto;
       margin-bottom: 10px;
     }*/
 
-    .reviews h3{
+    .reviews {
       margin-left: 5%;
+      margin-right: 5%; 
     }
-    .review1, .review2 {
-      margin: auto;
-      margin-bottom: 5px;
+    .reviews img {
+      
+      margin-bottom: 10px;
     }
 
    
@@ -1879,5 +1876,9 @@ margin: auto;
       .gamesrow {
         padding-left: 1%;
         padding-right: 1%;
+      }
+
+      .pp-title-icons {
+        flex-wrap: wrap;
       }
     }
