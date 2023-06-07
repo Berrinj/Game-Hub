@@ -752,9 +752,11 @@ margin: auto;
     }
     #readmore-checkbox:checked ~ label {
       display: none;
-      
     }
 
+    .readmore p {
+      font-size: 1rem;
+    }
       #text {
         display: none;
       }
