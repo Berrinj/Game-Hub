@@ -751,10 +751,6 @@ margin: auto;
     #readmore-checkbox:checked ~ label {
       display: none;
     }
-
-    .readmore p {
-      font-size: 16px;
-    }
       #text {
         display: none;
       }
@@ -1498,6 +1494,7 @@ margin: auto;
       display: flex;
       align-items: center;
       padding-left: 10%;
+      height: 90px;
      }
      .testnewsletter{
       height: auto;
@@ -1522,7 +1519,7 @@ margin: auto;
         width: auto;
       }
       .input-container{
-        padding-top:16px ;
+        padding-top:16px;
       }
       .testnewsletter button{
         align-self: center;
