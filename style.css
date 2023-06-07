@@ -736,6 +736,7 @@ margin: auto;
         margin-left: 10%;
         max-width: 100%;
         margin-top: 10px;
+        font-size: 1rem;
       }
       .readmore,
     #readmore-checkbox {
@@ -747,6 +748,7 @@ margin: auto;
     }
     #readmore-checkbox:checked ~ .readmore {
       display: block;
+      font-size: 1rem;
     }
     #readmore-checkbox:checked ~ label {
       display: none;
