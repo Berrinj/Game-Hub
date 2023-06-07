@@ -1034,14 +1034,54 @@ margin: auto;
         margin: auto;
         margin-top: 0px;
         margin-bottom: 24px;
-        width: 320px;
+        max-width: 320px;
+      }
+      .checkout-cart {
+        text-align: left;
+        max-width: 465px;
+        margin: auto;
+      }
+      .checkout-cart p {
+         margin: 0;
+      }
+      .checkout-items {
+        height: 100px;
+        position: relative;
+      }
+      .checkout-img {
+        width: 70px;
+        float: left;
+        margin-right: 10px;
       }
 
+      .checkout-items p {
+        margin-bottom: 1px;
+      }
+
+      /*.tq {
+        font-weight: bold;
+      
+      .remove {
+        font-style: italic;
+        text-align: right;
+      }}*/
+
+      .remove-item {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        font-style: italic;
+      }
+
+      .remove-item:hover {
+        cursor: pointer;
+      }
      
         fieldset {
             max-width: 465px;
             margin: auto;
             margin-bottom: 10px;
+            margin-top: 20px;
             border-radius: 10px;
         }
 
@@ -1131,7 +1171,7 @@ margin: auto;
 
 
      .placeorder {
-        width: 465px;
+        max-width: 465px;
         display: flex;
         justify-content: center;
         margin: auto;
@@ -1140,6 +1180,7 @@ margin: auto;
   .placeorderbutton {
         background-color: #CFA7A5;
         border: none;
+        margin: auto;
         margin-bottom: 21px;
         width: 361px;
         height: 50px;
@@ -1151,7 +1192,7 @@ margin: auto;
       }
 
       .paymentmethods {
-        width: 465px;
+        max-width: 465px;
         margin: auto;
         gap: 6px;
         display: flex;
@@ -1829,16 +1870,26 @@ margin: auto;
       justify-content: center;
     }
     .gotopaymentbutton {
-      max-width: 300px;
+      max-width: 200px;
     }
 
     /*  CHECKOUT  */
+    .checkout-items {
+      margin-left: 2%;
+      margin-right: 2%;
+    }
+    .checkout-cart p {
+      margin-left: 2%;
+    }
+    .remove-item p{
+      margin: 0;
+    }
     .placeorder {
       max-width: 300px;
       margin: auto;
     }
     .placeorderbutton {
-      max-width: 300px;
+      width: 200px;
     }
     .paymentmethods {
       max-width: 300px;
