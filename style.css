@@ -380,7 +380,7 @@ p.promo-p-two {
   max-width: 300px;
   min-width: 200px;
   background-color: #CFA7A5;
-  color: #fff;
+  color: #000;
   border-radius: 2px;
   border: none;
   /*margin-top: 20px;*/
@@ -394,8 +394,7 @@ p.promo-p-two {
 
 .promobanner {
   width: 100%;
-  background-color:
-  darkorange;
+  background-color: #1B203D;
 }
 
 .promobanner p {
@@ -403,8 +402,8 @@ p.promo-p-two {
   text-align: center;
   font-size: 1.4rem;
   padding:5px;
-  color: #fff;
-  letter-spacing: 0.2rem;
+  color: darkorange;
+  letter-spacing: 0.15rem;
 }
 
 .gamesrow {
@@ -1277,7 +1276,7 @@ p.promo-p-two {
         width: 50%;
         margin: 0;
         font-size: 20px;
-        color: #fff;
+        color: #1B203D;
         align-self: center;
       }
       .testnewslettertext p, h4{
@@ -1293,7 +1292,7 @@ p.promo-p-two {
       }
      .testnewsletterinput label {
         width: 400px;
-        color:#fff;
+        color: #1B203D;
         display: flex;
         flex-direction: column;
         margin-top: 0;
