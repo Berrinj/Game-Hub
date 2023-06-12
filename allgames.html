@@ -6,10 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Marte Lilleberre" />
     <meta name="dcterms.created" content="sat., 29 apr 2023 18:59:56 GMT" />
-    <meta name="description" content="Game Hub - Product page" />
+    <meta name="description" content="About Game hub, the Console game store" />
     <meta
       name="keywords"
       content="console games, playstation, xbox, nintendo, PC"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@600&display=swap"
+      rel="stylesheet"
     />
     <script
       src="https://kit.fontawesome.com/1664c6557b.js"
@@ -19,9 +25,7 @@
   </head>
   <body>
     <div class="header">
-      <a href="index.html">
-        <img src="logo/GameHub_Logopink72.png" alt="Game Hub logo"
-      /></a>
+      <img src="logo/GameHub_Logopink72.png" alt="Game Hub logo" />
     </div>
     <div class="welcomemessage">
       <p>WELCOME TO THE UNIVERSE OF GAMES!</p>
@@ -33,7 +37,7 @@
             ><img
               class="small-logo"
               src="logo/GameHub_LogoNoslogan72.png"
-              alt="gamnehub logo home"
+              alt="gamehub logo home"
           /></a>
           <a href="profile.html" class="mobileprofile"
             ><img
@@ -43,8 +47,8 @@
             />
             My Profile</a
           >
-          <a href="cart.html" class="mobilecart">
-            <img class="cartvector" src="vector/cart.svg" alt="cart icon" /> My
+          <a href="cart.html" class="mobilecart"
+            ><img class="cartvector" src="vector/cart.svg" alt="cart icon" /> My
             Cart</a
           >
           <a href="wishlist.html" class="mobilewishlist"
@@ -84,7 +88,7 @@
       <div class="main">
         <section class="maintop-background">
           <div class="topmenu">
-            <form action="#" class="searchbar">
+            <form action="productpage.html" class="searchbar">
               <label for="searchbarinput"></label>
               <input
                 type="text"
@@ -172,180 +176,224 @@
             </div>
           </div>
         </section>
-        <section class="breadcrumbs">
-          <p>
-            <a href="index.html">Gamehub.com</a> >
-            <a href="allgames.html">Games</a> >
-            <b>Cyberpunk</b>
-          </p>
-        </section>
-        <div class="productpagecontainer">
-          <div class="productpage">
-            <div class="productquickinfo">
-              <img
-                class="mainimg"
-                src="zoom/GameHub_covers9-72-zoom.jpg"
-                alt="cyberpunk cover photo"
-              />
-              <div class="pp-title-icons">
-                <h1>CYBERPUNK</h1>
-                <div class="pp-mobilevectors">
-                  <img src="vector/cart.svg" alt="cart icon" />
-                  <img src="vector/wishlist.svg" alt="heart wishlist icon" />
+
+        <div class="main-content">
+          <section class="breadcrumbs">
+            <p>
+              <a href="index.html">Gamehub.com</a> >
+              <a href="allgames.html"><b> All Games</b></a>
+            </p>
+          </section>
+          <section class="cat">
+            <h2>All games</h2>
+          </section>
+          <div class="gamesrow">
+            <div class="games-container">
+              <div class="cyberpunk">
+                <a href="productpage.html"
+                  ><img
+                    src="games/GameHub_covers9-72.jpg"
+                    alt="Cyberpunk cover"
+                /></a>
+                <img
+                  class="rating"
+                  src="vector/starscyberpunk.svg"
+                  alt="game rating"
+                />
+                <h3>CYBERPUNK</h3>
+                <p>
+                  -Available for PS4, PS5, Nintendo Switch, XBOX One & XBOX
+                  Series X
+                </p>
+                <p>-Instant download</p>
+                <div class="price-box">
+                  <h4>$35</h4>
                 </div>
               </div>
-              <p class="pp-p-one">
-                Welcome to the world of intense fighting video games! Get ready
-                to experience heart-pumping action and adrenaline-fueled battles
-                that will keep you on the edge of your seat.
-              </p>
-              <p>
-                <b>-Available for:</b> PS4, PS5, Nintendo Switch, XBOX One &
-                XBOX Series X
-              </p>
-              <p id="instantdownload">-Instant download</p>
-              <h2>Price: $35</h2>
             </div>
-            <div class="cartbuyheart">
-              <a href="cart.html">
-                <button class="cart" type="submit">
-                  <img src="vector/cart.svg" alt="cart icon" /></button
-              ></a>
-              <a href="checkout.html">
-                <button class="buy" type="submit">
-                  <b>Buy Now</b>
-                </button>
-              </a>
-              <a href="wishlist.html">
-                <button class="heart" type="submit">
-                  <img src="vector/wishlist.svg" alt="heart wishlist icon" />
-                </button>
-              </a>
-            </div>
-            <div class="description">
-              <h3>Description</h3>
-              <p>
-                Welcome to the world of intense fighting video games! Get ready
-                to experience heart-pumping action and adrenaline-fueled battles
-                that will keep you on the edge of your seat. In this game,
-                you'll choose your fighter from a diverse roster of characters,
-                each with their unique strengths and weaknesses.
-              </p>
 
-              <p>
-                As you step into the arena, you'll face off against opponents in
-                one-on-one battles, unleashing a variety of moves and combos to
-                take them down. From devastating punches and kicks to powerful
-                throws and special abilities, you'll need to master each of your
-                fighter's moves to emerge victorious.
-              </p>
-              <!--<button id="toggle"><em>Read More</em></button>
-                                jacascript needed
-                            inspired by https://codepen.io/legendaryPower/pen/dvJQvB-->
-              <span id="text">
-                As you progress through the game, you'll face tougher opponents,
-                each with their unique fighting styles and strategies. You'll
-                need to be quick on your feet, anticipating your opponent's
-                moves and reacting with lightning-fast reflexes. In addition to
-                the main story mode, this game features a range of other modes
-                to keep you entertained, including arcade mode, time attack,
-                survival mode, and online multiplayer. Take on the best players
-                from around the world and climb the rankings to become the
-                ultimate champion. With stunning graphics, immersive sound
-                effects, and intuitive controls, this fighting game will keep
-                you coming back for more. Are you ready to enter the arena and
-                show your opponents what you're made of? The fight begins
-                now!</span
-              >
-
-              <input type="checkbox" id="readmore-checkbox" />
-              <label for="readmore-checkbox"
-                ><p class="label-readmore">Read More</p></label
-              >
-              <div class="readmore">
-                <p>
-                  As you progress through the game, you'll face tougher
-                  opponents, each with their unique fighting styles and
-                  strategies. You'll need to be quick on your feet, anticipating
-                  your opponent's moves and reacting with lightning-fast
-                  reflexes. In addition to the main story mode, this game
-                  features a range of other modes to keep you entertained,
-                  including arcade mode, time attack, survival mode, and online
-                  multiplayer. Take on the best players from around the world
-                  and climb the rankings to become the ultimate champion.
-                </p>
-
-                <p>
-                  With stunning graphics, immersive sound effects, and intuitive
-                  controls, this fighting game will keep you coming back for
-                  more. Are you ready to enter the arena and show your opponents
-                  what you're made of? The fight begins now!
-                </p>
+            <div class="games-container">
+              <div class="game2">
+                <img src="games/GameHub_covers8-72.jpg" alt="Boxer cover" />
+                <img
+                  class="rating"
+                  src="vector/starsboxer.svg"
+                  alt="game rating"
+                />
+                <h3>BOXER</h3>
+                <p>-Available for PS4, XBOX One and PC</p>
+                <p>-Instant download</p>
+                <br />
+                <div class="price-box">
+                  <h4>$40</h4>
+                </div>
               </div>
             </div>
-            <div class="visuals">
-              <h3>Visuals</h3>
-              <iframe
-                width="100%"
-                height="315"
-                src="https://www.youtube.com/embed/8X2kIfS6fb8"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen
-              ></iframe>
 
-              <img
-                class="img1"
-                src="img/img1.jpg"
-                alt="cyberpunk cover photo"
-              />
-              <img
-                class="img2"
-                src="img/img2.jpg"
-                alt="cyberpunk cover photo"
-              />
-              <img
-                class="img3"
-                src="img/img3.jpg"
-                alt="cyberpunk cover photo"
-              />
+            <div class="games-container">
+              <div class="game3">
+                <img src="games/GameHub_covers7-72.jpg" alt="Racing cover" />
+                <img
+                  class="rating"
+                  src="vector/starsracing.svg"
+                  alt="game rating"
+                />
+                <h3>RACING</h3>
+                <p>-Available for PC and Nintendo Switch</p>
+                <p>-Instant download</p>
+                <br />
+                <div class="price-box">
+                  <h4>$36</h4>
+                </div>
+              </div>
             </div>
-            <div class="reviews">
-              <h3>Reviews</h3>
-              <img
-                src="img/reviewmelissa.jpg"
-                alt="game review by Melissa F."
-              />
-              <img src="img/reviewjohn.jpg" alt="game review by John K." />
+
+            <div class="games-container">
+              <div class="game4">
+                <img
+                  src="games/GameHub_covers10-72.jpg"
+                  alt="Forge Legend cover"
+                />
+                <img
+                  class="rating"
+                  src="vector/starsforgelegend.svg"
+                  alt="game rating"
+                />
+                <h3>FORGE LEGEND</h3>
+                <p>
+                  -Available for PS4, PS5, XBOX Series X and Nintendo Switch.
+                </p>
+                <p>-Instant download</p>
+                <br />
+                <div class="price-box">
+                  <h4>$45</h4>
+                </div>
+              </div>
             </div>
-            <button class="viewallreviews" type="button">View all</button>
+
+            <div class="games-container">
+              <div class="game4">
+                <img src="games/GameHub_covers5-72.jpg" alt="Assassin cover" />
+                <img
+                  class="rating"
+                  src="vector/starsassassin.svg"
+                  alt="game rating"
+                />
+                <h3>ASSASSIN</h3>
+                <p>
+                  -Available for PS4, PS5, XBOX One, XBOX Series X, Nintendo
+                  Switch and PC.
+                </p>
+                <p>-Instant download</p>
+                <div class="price-box">
+                  <h4>$48</h4>
+                </div>
+              </div>
+            </div>
+
+            <div class="games-container">
+              <div class="game4">
+                <img
+                  src="games/GameHub_covers2-72.jpg"
+                  alt="Super Duper cover"
+                />
+                <img
+                  class="rating"
+                  src="vector/starssuperduper.svg"
+                  alt="game rating"
+                />
+                <h3>SUPER DUPER</h3>
+                <p>
+                  -Available for PS4, PS5, XBOX One, XBOX Series X, Nintendo
+                  Switch and PC
+                </p>
+                <p>-Instant download</p>
+                <div class="price-box">
+                  <h4>$25</h4>
+                </div>
+              </div>
+            </div>
+
+            <div class="games-container">
+              <div class="game4">
+                <img src="games/GameHub_covers4-72.jpg" alt="Furious cover" />
+                <img
+                  class="rating"
+                  src="vector/starsfurious.svg"
+                  alt="game rating"
+                />
+                <h3>FURIOUS</h3>
+                <p>-Available for PS5, XBOX One and Nintendo Switch</p>
+                <p>-Instant download</p>
+                <br />
+                <div class="price-box">
+                  <h4>$50</h4>
+                </div>
+              </div>
+            </div>
+
+            <div class="games-container">
+              <div class="game3">
+                <img src="games/GameHub_covers3-72.jpg" alt="Black cover" />
+                <img
+                  class="rating"
+                  src="vector/starsnorating.svg"
+                  alt="game rating"
+                />
+                <h3>BLACK</h3>
+                <p>-Available for PS4, PS5, XBOX One, XBOX Series X and PC</p>
+                <p>-Instant download</p>
+                <br />
+                <div class="price-box">
+                  <h4>$30</h4>
+                </div>
+              </div>
+            </div>
+
+            <div class="games-container">
+              <div class="game3">
+                <img src="games/GameHub_covers-72.jpg" alt="Ping Pong cover" />
+                <img
+                  class="rating"
+                  src="vector/starsnorating.svg"
+                  alt="game rating"
+                />
+                <h3>PING PONG</h3>
+                <p>-Available for PS5, Nintendo Switch and XBOX Series X</p>
+                <p>-Instant download</p>
+                <br />
+                <div class="price-box">
+                  <h4>$25</h4>
+                </div>
+              </div>
+            </div>
+
+            <div class="games-container">
+              <div class="game3">
+                <img src="games/GameHub_covers6-72.jpg" alt="Space War cover" />
+                <img
+                  class="rating"
+                  src="vector/starsnorating.svg"
+                  alt="game rating"
+                />
+                <h3>SPACE WAR</h3>
+                <p>-Available for PS4, PS5, XBOX One and PC</p>
+                <p>-Instant download</p>
+                <br />
+                <div class="price-box">
+                  <h4>$30</h4>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- GAMMEL NEWSLETTER
-            <section class="newsletter">
-            <div class="newslettertext">
-            <p><b>Subscribe to our Newsletter to get 15% off your next order!</b><br>
-                You’ll also be the first to know about new releases and special offers.</p>
-            </div>
-            <div class="newsletterinput">
-            <p class="enteremail">Enter your email address:</p>
-                <input class="inputemail" type="email" placeholder="gamehub@test.com">
-                <button class="Subscribe" type="button">
-                    <b>SUBSCRIBE</b>
-                </button>
-            </div>
-        </section>
-    -->
     <section class="testnewsletter">
       <div class="newsletterall">
         <div class="testnewslettertext">
-          <h4>
-            <b>Subscribe to our Newsletter to get 15% off your next order!</b>
-          </h4>
+          <h4>Subscribe to our Newsletter to get 15% off your next order!</h4>
           <p>
             You’ll also be the first to know about new releases and special
             offers.
@@ -402,3 +450,5 @@
     </div>
   </body>
 </html>
+
+<!-- Search bar: https://www.youtube.com/watch?v=9hnJsNIBq1g -->
