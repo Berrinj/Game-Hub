@@ -781,6 +781,7 @@ a:active {
 .label-readmore {
   font-style: italic;
   color: rgb(4, 4, 177);
+  margin-left: 10%;
 }
 
 #readmore-checkbox:checked~.readmore {
@@ -1865,6 +1866,9 @@ h4 {
     }*/
 
   .description h3 {
+    margin-left: 5%;
+  }
+  .label-readmore {
     margin-left: 5%;
   }
 
