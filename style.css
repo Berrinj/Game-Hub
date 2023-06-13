@@ -687,16 +687,23 @@ footer .fcenter img {
   gap: 2px;
 }
 
-.cartbuyheart button {
+.cart,
+.buy,
+.heart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: #cfa7a5;
   height: 35px;
   border: 0;
   border-radius: 7px;
   cursor: pointer;
+  color: #1b203d;
 }
 
+
 .cartbuyheart img {
-  align-items: center;
+  align-self: center;
   height: 25px;
 }
 
@@ -708,7 +715,9 @@ footer .fcenter img {
   width: 253px;
 }
 
-.buy:hover {
+.buy:hover,
+.cart:hover,
+.heart:hover {
   background-color: #e6d2d1;
 }
 
