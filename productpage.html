@@ -7,7 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="author" content="Marte Lilleberre" />
   <meta name="dcterms.created" content="sat., 29 apr 2023 18:59:56 GMT" />
-  <meta name="description" content="Welcome to the products page, an in debth view of the game. See video, pictures, reviews and a game description" />
+  <meta name="description"
+    content="Welcome to the products page, an in debth view of the game. See video, pictures, reviews and a game description" />
   <meta name="keywords" content="console games, playstation, xbox, nintendo, PC" />
   <script src="https://kit.fontawesome.com/1664c6557b.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="style.css" />
@@ -22,8 +23,8 @@
     <p>WELCOME TO THE UNIVERSE OF GAMES!</p>
   </div>
   <div class="wrapper">
-    <div class="navigation">
-      <nav class="leftnav">
+    <div class="leftside">
+      <nav>
         <a href="index.html" class="mobilelogo"><img class="small-logo" src="logo/GameHub_LogoNoslogan72.png"
             alt="gamnehub logo home" /></a>
         <a href="profile.html" class="mobileprofile"><img class="profilevector" src="vector/profile.svg"
@@ -39,7 +40,8 @@
           About Us</a>
         <input type="checkbox" id="menu-checkbox" />
         <label for="menu-checkbox" class="moretext"><i class="fas fa-bars fa-3x"></i>
-          More</label>
+          <p>More</p>
+        </label>
         <div class="hamburger-menu">
           <h3>Hello, Rihanna</h3>
           <a href="#">Games rated 3+</a>
@@ -57,80 +59,78 @@
       </nav>
     </div>
 
-    <div class="main">
-      <section class="maintop-background">
+    <main>
         <div class="topmenu">
           <form action="#" class="searchbar">
             <label for="searchbarinput"></label>
-            <input type="text" id="searchbarinput" placeholder="Search for games" />
+            <input type="text" id="searchbarinput" placeholder="Search for games">
             <button type="submit">
-              <img src="vector/search.svg" alt="search icon" />
+              <img src="vector/search.svg" alt="search icon">
             </button>
           </form>
 
           <div class="platforms">
-            <input type="checkbox" id="pc-checkbox" />
+            <input type="checkbox" id="pc-checkbox">
             <label for="pc-checkbox" class="labelname">
-              <img src="vector/pcmini.svg" alt="Browse games by PC" /> PC
+              <img src="vector/pcmini.svg" alt="Browse games by PC"> <p>PC</p>
             </label>
             <div class="pc-menu">
               <h4>Platforms</h4>
-              <hr />
-              <img src="vector/windows.svg" alt="windows icon" />
+              <hr>
+              <img src="vector/windows.svg" alt="windows icon">
               <p>Windows 11</p>
             </div>
 
-            <input type="checkbox" id="ps-checkbox" />
-            <label for="ps-checkbox" class="labelname"><img src="vector/psmini.svg" alt="Browse games by PlayStation" />
-              PlayStation
-            </label>
+            <input type="checkbox" id="ps-checkbox">
+            <label for="ps-checkbox" class="labelname"><img src="vector/psmini.svg" alt="Browse games by PlayStation">
+              <p>PlayStation</p> </label>
             <div class="ps-menu">
               <h4>Console</h4>
-              <hr />
+              <hr>
               <div class="consoles">
                 <div class="console-one">
-                  <img src="vector/ps4.svg" alt="playstation 4 icon" />
+                  <img src="vector/ps4.svg" alt="playstation 4 icon">
                   <p>PS4</p>
                 </div>
                 <div class="console-two">
-                  <img src="vector/ps5.svg" alt="playstation 5 icon" />
+                  <img src="vector/ps5.svg" alt="playstation 5 icon">
                   <p>PS5</p>
                 </div>
               </div>
             </div>
 
-            <input type="checkbox" id="xbox-checkbox" />
-            <label for="xbox-checkbox" class="labelname"><img src="vector/xboxmini.svg" alt="Browse games by Xbox" />
-              Xbox</label>
+            <input type="checkbox" id="xbox-checkbox">
+            <label for="xbox-checkbox" class="labelname"><img src="vector/xboxmini.svg" alt="Browse games by Xbox">
+              <p>Xbox</p> </label>
             <div class="xbox-menu">
               <h4>Console</h4>
-              <hr />
+              <hr>
               <div class="consoles">
                 <div class="console-one">
-                  <img src="vector/xboxicon.svg" alt="xbox icon" />
+                  <img src="vector/xboxicon.svg" alt="xbox icon">
                   <p>XBOX One</p>
                 </div>
                 <div class="console-two">
-                  <img src="vector/xboxicon.svg" alt="xbox icon" />
+                  <img src="vector/xboxicon.svg" alt="xbox icon">
                   <p>XBOX X</p>
                 </div>
               </div>
             </div>
 
-            <input type="checkbox" id="ns-checkbox" />
-            <label for="ns-checkbox" class="labelname"><img src="vector/nintendomini.svg"
-                alt="Browse games by Nintendo" />
-              Nintendo</label>
+            <input type="checkbox" id="ns-checkbox">
+            <label for="ns-checkbox" class="labelname">
+              <img src="vector/nintendomini.svg" alt="Browse games by Nintendo">
+              <p>Nintendo</p>
+            </label>
             <div class="ns-menu">
               <h4>Console</h4>
-              <hr />
-              <img src="vector/nintendoswitch.svg" alt="nintendo switch icon" />
+              <hr>
+              <img src="vector/nintendoswitch.svg" alt="nintendo switch icon">
               <p>Nintendo Switch</p>
             </div>
           </div>
-
         </div>
-      </section>
+     
       <section class="breadcrumbs">
         <p>
           <a href="index.html">Gamehub.com</a> >
@@ -255,24 +255,9 @@
           <button class="viewallreviews" type="button">View all</button>
         </div>
       </div>
-    </div>
+    </main>
   </div>
 
-  <!-- GAMMEL NEWSLETTER
-            <section class="newsletter">
-            <div class="newslettertext">
-            <p><b>Subscribe to our Newsletter to get 15% off your next order!</b><br>
-                You’ll also be the first to know about new releases and special offers.</p>
-            </div>
-            <div class="newsletterinput">
-            <p class="enteremail">Enter your email address:</p>
-                <input class="inputemail" type="email" placeholder="gamehub@test.com">
-                <button class="Subscribe" type="button">
-                    <b>SUBSCRIBE</b>
-                </button>
-            </div>
-        </section>
-    -->
   <section class="testnewsletter">
     <div class="newsletterall">
       <div class="testnewslettertext">
@@ -296,7 +281,7 @@
     </div>
   </section>
 
-  <div class="footer">
+  <footer>
     <p class="fleft">
       <img src="vector/trustpilot.svg" alt="trustpilot" />
     </p>
@@ -327,7 +312,7 @@
         <li>FAQ</li>
       </ul>
     </div>
-  </div>
+  </footer>
 </body>
 
 </html>

@@ -44,11 +44,11 @@ body {
   display: flex;
 }
 
-.main {
+main {
   width: 100%;
 }
 
-.main .cat {
+main .cat {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -57,21 +57,7 @@ body {
   padding-right: 10%;
 }
 
-/*aside {
-        flex: 0 0 77px;
-        position: relative;
-      }*/
-
-/*.container {
-        display: flex;
-        justify-content: flex-start;
-        flex-direction: row;
-        gap: 50px 50px;
-        flex-wrap: wrap;
-        background-color: #F6F6F6;
-    }
-   */
-.leftnav {
+nav {
   left: 0;
   background-color: #bac5cf;
   color: #1b203d;
@@ -83,7 +69,7 @@ body {
   text-decoration: none;
 }
 
-.leftnav a {
+nav a {
   color: #1b203d;
   font-family: Inter, Arial;
   text-decoration: none;
@@ -127,6 +113,9 @@ ul li {
 .moretext {
   margin: 0;
   cursor: pointer;
+}
+.moretext p {
+  margin: 0;
 }
 
 .hamburger-menu,
@@ -307,37 +296,9 @@ a.logout {
   justify-content: space-around;
 }
 
-p.labelname {
+.labelname p {
   margin: 0;
 }
-
-/*.searchbar button img {
-    width: 20px;
-
-}*/
-
-/*.main .slidervideo {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding-left: 15%;
-    padding-right: 15%;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-.slider {
-  max-width: 713px;
-}
-*/
-
-/*.maintop-background {
-  background-color: #BAC5CF;
-    padding-bottom: 15px;*/
-/*border-radius: 0 0 30px 30px;*/
-/*box-shadow: 0px 0px 20px 1px #1B203D;
-}*/
 
 .promo {
   max-width: 100%;
@@ -385,18 +346,20 @@ p.promo-p-two {
   padding-bottom: 10px;
 }
 
-.promo-redmore-button {
+.promo-readmore-button {
   max-width: 300px;
   min-width: 200px;
   background-color: #cfa7a5;
   color: #000;
-  border-radius: 2px;
+  border-radius: 7px;
+  text-align: center;
   border: none;
+  padding: 7px;
   /*margin-top: 20px;*/
   cursor: pointer;
 }
 
-.promo-redmore-button:hover {
+.promo-readmore-button:hover {
   scale: 110%;
   background-color: #a1817f;
 }
@@ -589,7 +552,7 @@ a:active {
 
  /* FOOTER */
 
-.footer {
+footer {
   display: flex;
   background-color: #1b203d;
   text-align: center;
@@ -603,15 +566,15 @@ a:active {
   position: relative;
 }
 
-.footer li {
+footer li {
   display: block;
 }
 
-.footer p {
+footer p {
   margin-bottom: 5px;
 }
 
-.footer .fcenter img {
+footer .fcenter img {
   margin-right: 6px;
   margin-left: 6px;
 }
@@ -932,9 +895,6 @@ a:active {
 
 /*CART*/
 
-/*.leftnav {
-        display: none;
-      }*/
 .continue-shopping {
   display: flex;
   margin-left: 10%;
@@ -1174,86 +1134,16 @@ input[type] {
   flex-direction: row-reverse;
 }
 
-/* .tc label {
-        order: 2;
-      }*/
 
 #terms {
   flex: 1;
 }
-
-/* fieldset input[type=text] {
-            width: 100%;
-            padding: 12px 20px;
-            margin: 8px 0;
-            box-sizing: border-box;
-      }
-
-      input[type=number] {
-        width: 100%;
-        padding: 12px 20px;
-        margin: 8px 0px;
-        box-sizing: border-box;
-      }
-
-      input[type=cvc] {
-        width: 100%;
-        padding: 12px 20px;
-        margin: 8px 0;
-        box-sizing: border-box;
-      }
-
-      input[type=email] {
-        width: 100%;
-        padding: 12px 20px;
-        margin: 8px 0;
-        box-sizing: border-box;
-      }*/
-
-/*input[type=checkbox] {
-       width: 100%;
-        padding: 12px 20px;
-        margin: 8px 0;
-        box-sizing: border-box;
-      }*/
-
-/*https://www.w3schools.com/css/css_form.asp*/
-
-/*input[type=submit] {
-        background-color: #CFA7A5;
-        border: none;
-        width: 361px;
-        height: 50px;
-        float: right;
-        border-radius: 2px;
-        cursor: pointer;
-      }
-
-      input[type=submit]:hover {
-        background-color: #e6d2d1;
-        cursor: pointer;
-      }*/
 
 .placeorder {
   max-width: 465px;
   display: flex;
   justify-content: center;
   margin: auto;
-}
-
-.placeorderbutton {
-  background-color: #cfa7a5;
-  border: none;
-  margin: auto;
-  margin-bottom: 21px;
-  width: 361px;
-  height: 50px;
-  border-radius: 2px;
-}
-
-.placeorderbutton:hover {
-  background-color: #e6d2d1;
-  cursor: pointer;
 }
 
 .paymentmethods {
@@ -1263,6 +1153,7 @@ input[type] {
   display: flex;
   justify-content: center;
   margin-bottom: 40px;
+  margin-top: 20px;
 }
 
 /*CONFIRMATION*/
@@ -1298,20 +1189,6 @@ input[type] {
   justify-content: center;
   margin: auto;
   margin-bottom: 40px;
-}
-
-.shopmorebutton {
-  background-color: #cfa7a5;
-  border: none;
-  margin-bottom: 21px;
-  width: 250px;
-  height: 50px;
-  border-radius: 2px;
-}
-
-.shopmorebutton:hover {
-  background-color: #e6d2d1;
-  cursor: pointer;
 }
 
 .testnewsletter {
@@ -1519,6 +1396,15 @@ h4 {
 .wishlist2 {
   max-width: 200px;
 }
+.wishlist-button {
+  max-width: 40px;
+  background-color: #cfa7a5;
+  padding: 7px;
+  color: #1b203d;
+  border-radius: 5px;
+
+}
+
 
 /* PROFILE */
 
@@ -1609,11 +1495,7 @@ h4 {
     display: none;
   }
 
-  .navigation {
-    z-index: 1000;
-  }
-
-  .leftnav {
+  nav {
     position: fixed;
     top: 0;
     background-color: #cfa7a5;
@@ -1622,17 +1504,15 @@ h4 {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    z-index: 1000;
   }
-
-  /*.leftnav a {
-        display: none;
-      }*/
+  
   .fas.fa-bars {
     margin: 0;
     padding-left: 20px;
   }
 
-  .moretext {
+  .moretext p{
     display: none;
   }
 
@@ -1705,7 +1585,7 @@ h4 {
     display: none;
   }
 
-  .main {
+  main {
     position: relative;
     top: 70px;
     margin-bottom: 70px;
@@ -1718,10 +1598,6 @@ h4 {
     height: 95px;
   }
 
-  /*.maintop-background {
-        background-color: #BAC5CF;
-      }*/
-
   .platforms {
     height: auto;
     padding-top: 0;
@@ -1729,7 +1605,7 @@ h4 {
     margin-top: 5px;
   }
 
-  p.labelname {
+  .labelname p{
     font-size: 0;
   }
 
@@ -1740,6 +1616,7 @@ h4 {
     width: 200px;
     top: 115px;
   }
+
 
   p.promo-p-one {
     font-size: 1rem;
@@ -1768,13 +1645,13 @@ h4 {
     display: none;
   }
 
-  .footer {
+  footer {
     display: flex;
     flex-direction: column;
     height: fit-content;
   }
 
-  .footer .fleft {
+  footer .fleft {
     order: 3;
     padding-left: 0;
   }
