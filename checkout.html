@@ -2,21 +2,21 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8">
   <title>Game Hub - Checkout</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="author" content="Marte Lilleberre" />
-  <meta name="dcterms.created" content="sat., 29 apr 2023 18:59:56 GMT" />
-  <meta name="description" content="Checkout page where all payemnt info is added and the last step before you can download your new game." />
-  <meta name="keywords" content="console games, playstation, xbox, nintendo, PC" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Marte Lilleberre">
+  <meta name="dcterms.created" content="sat., 29 apr 2023 18:59:56 GMT">
+  <meta name="description" content="Checkout page where all payemnt info is added and the last step before you can download your new game.">
+  <meta name="keywords" content="console games, playstation, xbox, nintendo, PC">
   <script src="https://kit.fontawesome.com/1664c6557b.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
   <div class="header">
     <a href="index.html">
-      <img src="logo/GameHub_Logopink72.png" alt="Game Hub logo" /></a>
+      <img src="logo/GameHub_Logopink72.png" alt="Game Hub logo"></a>
   </div>
   <div class="welcomemessage">
     <p>WELCOME TO THE UNIVERSE OF GAMES!</p>
@@ -25,18 +25,18 @@
     <div class="leftside">
       <nav>
         <a href="index.html" class="mobilelogo"><img class="small-logo" src="logo/GameHub_LogoNoslogan72.png"
-            alt="gamnehub logo home" /></a>
+            alt="gamnehub logo home"></a>
         <a href="profile.html" class="mobileprofile"><img class="profilevector" src="vector/profile.svg"
-            alt="profile icon" />
+            alt="profile icon">
           My Profile</a>
-        <a href="cart.html" class="mobilecart"><img class="cartvector" src="vector/cart.svg" alt="cart icon" /> My
+        <a href="cart.html" class="mobilecart"><img class="cartvector" src="vector/cart.svg" alt="cart icon"> My
           Cart</a>
         <a href="wishlist.html" class="mobilewishlist"><img class="wishlistvector" src="vector/wishlist.svg"
-            alt="wishlist icon" />
+            alt="wishlist icon">
           My Wishlist</a>
-        <a href="about.html" class="mobileabout"><img class="aboutvector" src="vector/info.svg" alt="about icon" />
+        <a href="about.html" class="mobileabout"><img class="aboutvector" src="vector/info.svg" alt="about icon">
           About Us</a>
-        <input type="checkbox" id="menu-checkbox" />
+        <input type="checkbox" id="menu-checkbox">
         <label for="menu-checkbox" class="moretext"><i class="fas fa-bars fa-3x"></i>  
         </label>
         <p>More</p>
@@ -58,16 +58,16 @@
     </div>
 
     <main>
-      <a href="index.html" class="continue-shopping"><img src="vector/arrowleft.svg" alt="arrow" />
+      <a href="index.html" class="continue-shopping"><img src="vector/arrowleft.svg" alt="arrow">
         <p>Continue shopping</p>
       </a>
       <div class="progress">
         Shopping Cart
         <div class="mobilearrow">></div>
-        <img src="vector/dottetlinearrow.svg" alt="arrow" />
+        <img src="vector/dottetlinearrow.svg" alt="arrow">
         <b>Checkout</b>
         <div class="mobilearrow">></div>
-        <img src="vector/dottetlinearrow.svg" alt="arrow" />
+        <img src="vector/dottetlinearrow.svg" alt="arrow">
         Confirmation
       </div>
       <div class="checkout-header">
@@ -79,20 +79,10 @@
       </div>
       <div class="checkout-cart">
         <p>Item(s) in your order:</p>
-        <hr />
-        <!-- <div class="checkout-items">
-                    <hr>
-                    <img src="zoom/GameHub_covers9-72-zoom.jpg" class="checkout-img">
-                    <p class="tq">Title:</p>
-                    <p> Cyberpunk</p>
-                    <p class="tq">Quantity:</p>
-                    <p>1</p>
-                    <div class="remove-item">
-                        <p>Remove item</p>
-                    </div>
-                </div> -->
+        <hr>
+    
         <div class="checkout-items">
-          <img src="zoom/GameHub_covers9-72-zoom.jpg" class="checkout-img" alt="image of game in cart" />
+          <img src="zoom/GameHub_covers9-72-zoom.jpg" class="checkout-img" alt="image of game in cart">
           <p><b>Title:</b> Cyberpunk</p>
           <p><b>Quantity:</b> 1</p>
           <p><b>Price:</b> $35</p>
@@ -108,29 +98,29 @@
           <ul>
             <li>
               <label for="name">Name on card:</label>
-              <input type="text" id="name" name="user_name" placeholder="Robyn Rihanna Fenty" />
+              <input type="text" id="name" name="user_name" placeholder="Robyn Rihanna Fenty">
             </li>
             <li>
               <label for="cardnumber">Card number</label>
               <input type="number" id="cardnumber" name="card_number" placeholder="xxxx xxxx xxxx xxxx"
-                class="card-number" />
+                class="card-number">
             </li>
             <li>
               <label for="experationdate">Expiration date:</label>
-              <input type="number" id="experationdate" name="card_experation" placeholder="MM/YY" />
+              <input type="number" id="experationdate" name="card_experation" placeholder="MM/YY">
               <label for="cvc">CVC:</label>
-              <input type="text" id="cvc" name="card_cvc" required minlength="3" maxlength="3" placeholder="xxx" />
+              <input type="text" id="cvc" name="card_cvc" required minlength="3" maxlength="3" placeholder="xxx">
             </li>
             <li>
               <label for="email">Email:</label>
-              <input type="email" id="email" name="user_email" />
+              <input type="email" id="email" name="user_email">
             </li>
             <li>
               <div class="tc">
                 <label for="terms">I accept the terms & conditions and confirm that I’ve read
                   them.
                 </label>
-                <input type="checkbox" id="terms" name="checkbox_terms" />
+                <input type="checkbox" id="terms" name="checkbox_terms">
               </div>
             </li>
             <!--<li>
@@ -147,10 +137,10 @@
         </a>
       </div>
       <div class="paymentmethods">
-        <img src="vector/klarna.svg" alt="klarna" />
-        <img src="vector/mastercard.svg" alt="mastercard" />
-        <img src="vector/visa.svg" alt="visa" />
-        <img src="vector/paypal.svg" alt="paypal" />
+        <img src="vector/klarna.svg" alt="klarna">
+        <img src="vector/mastercard.svg" alt="mastercard">
+        <img src="vector/visa.svg" alt="visa">
+        <img src="vector/paypal.svg" alt="paypal">
       </div>
     </main>
   </div>
@@ -169,7 +159,7 @@
       <div class="input-container">
         <div class="testnewsletterinput">
           <label for="mail">Enter your email address:</label>
-          <input class="testinputemail" id="mail" type="email" placeholder="gamehub@test.com" />
+          <input class="testinputemail" id="mail" type="email" placeholder="gamehub@test.com">
         </div>
         <button class="Subscribe" type="button">
           <b>SUBSCRIBE</b>
@@ -180,24 +170,24 @@
 
   <footer>
     <p class="fleft">
-      <img src="vector/trustpilot.svg" alt="trustpilot" />
+      <img src="vector/trustpilot.svg" alt="trustpilot">
     </p>
     <div class="fcenter">
       <p>Follow us</p>
       <div class="socials">
-        <img src="vector/facebook.svg" alt="facebook" />
-        <img src="vector/twitter.svg" alt="twitter" />
-        <img src="vector/instagram.svg" alt="instagram" />
-        <img src="vector/twitch.svg" alt="twitch" />
+        <img src="vector/facebook.svg" alt="facebook">
+        <img src="vector/twitter.svg" alt="twitter">
+        <img src="vector/instagram.svg" alt="instagram">
+        <img src="vector/twitch.svg" alt="twitch">
       </div>
 
       <p>Safe payment</p>
-      <img src="vector/klarna.svg" alt="klarna" />
-      <img src="vector/mastercard.svg" alt="mastercard" />
-      <img src="vector/visa.svg" alt="visa" />
-      <img src="vector/paypal.svg" alt="paypal" />
+      <img src="vector/klarna.svg" alt="klarna">
+      <img src="vector/mastercard.svg" alt="mastercard">
+      <img src="vector/visa.svg" alt="visa">
+      <img src="vector/paypal.svg" alt="paypal">
       <p>
-        Copyright &copy; GAME HUB 2023<br />
+        Copyright &copy; GAME HUB 2023<br>
         All rights reserved
       </p>
     </div>
