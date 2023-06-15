@@ -730,7 +730,7 @@ footer .fcenter img {
 .visuals iframe {
   width: 100%;
   height: 280px;
-  border-width: 0px;
+  border: 0px;
 }
 
 .img1,
