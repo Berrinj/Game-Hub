@@ -100,13 +100,6 @@ ul li {
   cursor: pointer;
 }
 
-/*.fas.fa-bars {
-  margin-top: 28px;
-  display: block;
-  cursor: pointer;
-  margin-bottom: 5px;
-}*/
-
 .moretext {
   margin: 0;
   cursor: pointer;
@@ -183,7 +176,6 @@ a.logout {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  /*align-items: center;*/
   justify-content: center;
   padding-top: 5px;
   padding-left: 10px;
@@ -360,7 +352,6 @@ p.promo-p-two {
   text-align: center;
   border: none;
   padding: 7px;
-  /*margin-top: 20px;*/
   cursor: pointer;
 }
 
@@ -401,7 +392,6 @@ p.promo-p-two {
 }
 
 .games-container:hover {
-  /*background-color: #CFA7A5;*/
   scale: 105%;
 }
 
@@ -448,12 +438,6 @@ a:active {
   color: #1b203d;
 }
 
-/*.games-container h1 {
-        width: 228px;
-        margin: 8px 8px 0px 8px;
-        color: #1B203D;
-        }*/
-
 .cyberpunk {
   width: 244px;
 }
@@ -498,62 +482,6 @@ a:active {
 .viewall-button:hover {
   background-color: #fff;
 }
-
-/*
-  OLD NEWSLETTER 
-
- .newsletter {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    height: 90px;
-    background-color: #CFA7A5;
- }
- 
- .newslettertext {
-    padding-left: 10%;
-    margin: 0;
-    font-size: 20px;
-    color: #fff;
-    flex-grow: 1;
-
- }
-
- .newsletterinput {
-    align-items: center;
-    max-width: 650px;
-    display: flex;
-    flex-direction: row;
-    margin-left: 20px;
-    padding-right: 10%;
-
- }
-
- .newsletter .enteremail {
-    font-size: 16px;
-    width: 200px;
-    color: #fff;
- }
-
-.newsletter button {
-    height: 41px;;
-    background-color: #1B203D;
-    color: #fff;
-    border-radius: 10px;
-    border: 0;
-    margin-left: 10px;
-    cursor: pointer;
-    box-shadow: 0px 1px 2px 0px #1B203D;
-}
-
- .inputemail {
-    height: 41px;
-    width: 365px;
-    border-radius: 10px;
-    border: 0;
-    padding-left: 10px;
-    outline: none;
- }/*
 
  /* FOOTER */
 
@@ -849,18 +777,6 @@ footer .fcenter img {
 
 /*ABOUT*/
 
-/*.aboutheader {
-        height: 224px;
-        background-color: transparent;
-        margin-top: 20px;
-      }
-
-      .aboutheader img {
-        height: 200px;
-        display: block;
-        margin: auto;
-      }*/
-
 .aboutheading {
   max-width: 840px;
   margin: auto;
@@ -910,6 +826,9 @@ footer .fcenter img {
 
 .progress {
   text-align: center;
+}
+.progress a {
+  color: #1b203d;
 }
 
 .progress ul,
@@ -1095,14 +1014,6 @@ hr {
 .checkout-items p {
   margin-bottom: 1px;
 }
-
-/*.tq {
-        font-weight: bold;
-      
-      .remove {
-        font-style: italic;
-        text-align: right;
-      }}*/
 
 .remove-item {
   position: absolute;
@@ -1414,7 +1325,6 @@ h4 {
   border-radius: 5px;
 
 }
-
 
 /* PROFILE */
 
@@ -1733,10 +1643,6 @@ h4 {
     margin-left: 0;
   }
 
-  /*#instantdownload {
-      margin: 0;
-    }*/
-
   .description h3 {
     margin-left: 5%;
   }
@@ -1765,13 +1671,6 @@ h4 {
     max-width: 200px;
     margin-top: 10px;
   }
-
-  /*.visuals iframe {
-      padding: 0;
-      max-width: 350px;
-      margin: auto;
-      margin-bottom: 10px;
-    }*/
 
   .reviews {
     margin-left: 5%;
@@ -1814,24 +1713,9 @@ h4 {
     color: #1b203d;
   }
 
-  /* .shopping-cart-header {
-      margin-left: 2%;
-    }
-    .shopping-cart a {
-      margin-left: 5%;
-    }*/
-
   .cartinfo {
     padding-left: 2px;
   }
-
-  /*.total {
-      margin-left: 2%;
-      margin-right: 2%;
-    }
-    .promocodefield {
-      margin-right: 2%;
-    }*/
 
   .gotopayment {
     display: flex;
