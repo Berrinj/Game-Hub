@@ -483,6 +483,18 @@ a:active {
   background-color: #fff;
 }
 
+.backtotop {
+  width: 100%;
+  text-align: center;
+  color:#1b203d;
+  margin-bottom: 10px;
+}
+
+.backtotop a {
+  color: #1b203d;
+  text-decoration: none;
+}
+
  /* FOOTER */
 
 footer {
