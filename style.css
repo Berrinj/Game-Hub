@@ -579,7 +579,7 @@ footer .fcenter img {
   max-width: 840px;
   background: #fff;
   margin: auto;
-  padding-bottom: 31px;
+  padding-bottom: 00px;
   margin-top: 34px;
   border-radius: 5px;
 }
@@ -597,6 +597,9 @@ footer .fcenter img {
   margin-top: 44px;
   margin-right: 97px;
   justify-content: center;
+}
+.productpage {
+  margin-bottom: 20px;
 }
 
 .pp-mobilevectors {
@@ -771,24 +774,6 @@ footer .fcenter img {
 .reviews img {
   width: 250px;
   margin: auto;
-}
-
-.viewallreviews {
-  height: 22px;
-  width: 80px;
-  margin-top: 10px;
-  border-radius: 10px;
-  border: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 16px;
-  box-shadow: 2px 3px 5px 0px #bac5cf;
-  cursor: pointer;
-  float: right;
-  margin-right: 10%;
-}
-
-.viewallreviews:hover {
-  background-color: #fff;
 }
 
 /*ABOUT*/
