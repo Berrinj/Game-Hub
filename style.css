@@ -119,14 +119,14 @@ nav p {
 .hamburger-menu {
   position: absolute;
   width: 200px;
-  height: 450px;
+  height: auto;
   border: 1px solid #1b203d;
   border-top: 1px solid #cfa7a5;
   top: 294px;
   left: 77px;
   z-index: 2000;
   background-color: #fff;
-  box-shadow: 0 4px 2px 1px grey;
+  box-shadow: 0 4px 2px 1px #6662625e;
 }
 
 .hamburger-menu a {
@@ -1440,7 +1440,6 @@ h4 {
   .hamburger-menu {
     left: 0;
     top: 70px;
-    height: auto;
     box-shadow: 0 0 0 0;
     border-top: 1px solid #1b203d;
   }
