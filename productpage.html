@@ -8,10 +8,11 @@
   <meta name="author" content="Marte Lilleberre">
   <meta name="dcterms.created" content="sat., 29 apr 2023 18:59:56 GMT">
   <meta name="description"
-    content="Welcome to the products page, an in debth view of the game. See video, pictures, reviews and a game description" >
+    content="Welcome to the products page, an in debth view of the game. See video, pictures, reviews and a game description">
   <meta name="keywords" content="console games, playstation, xbox, nintendo, PC">
   <script src="https://kit.fontawesome.com/1664c6557b.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="style.css">
+  <script type="module" src="js/game.js"></script>
 </head>
 
 <body>
@@ -39,14 +40,14 @@
         <a href="about.html" class="mobileabout"><img class="aboutvector" src="vector/info.svg" alt="about icon">
           About Us</a>
         <input type="checkbox" id="menu-checkbox">
-        <label for="menu-checkbox" class="moretext"><i class="fas fa-bars fa-3x"></i> 
-        <b>more</b></label>
+        <label for="menu-checkbox" class="moretext"><i class="fas fa-bars fa-3x"></i>
+          <b>more</b></label>
         <p>More</p>
         <div class="hamburger-menu">
           <h3>Hello, Marte</h3>
           <a href="allgames.html">Games rated 3+</a>
-          <a href="allgames.html" class="ratedtwo">Games rated 16+</a>
-          <a href="allgames.html" class="ratedthree">Games rated 18+</a>
+          <a href="rated16.html" class="ratedtwo">Games rated 16+</a>
+          <a href="rated18.html" class="ratedthree">Games rated 18+</a>
           <a href="allgames.html">View all games</a>
           <a href="about.html">About us</a>
           <a href="contact.html">Contact us</a>
@@ -61,101 +62,128 @@
     </div>
 
     <main>
-        <div class="topmenu">
-          <form action="#" class="searchbar">
-            <label for="searchbarinput"><b>search bar</b></label>
-            <input type="text" id="searchbarinput" placeholder="Search for games">
-            <button type="submit">
-              <img src="vector/search.svg" alt="search icon">
-            </button>
-          </form>
+      <div class="topmenu">
+        <form action="#" class="searchbar">
+          <label for="searchbarinput"><b>search bar</b></label>
+          <input type="text" id="searchbarinput" placeholder="Search for games">
+          <button type="submit">
+            <img src="vector/search.svg" alt="search icon">
+          </button>
+        </form>
 
-          <div class="platforms">
-            <input type="checkbox" id="pc-checkbox">
-            <label for="pc-checkbox" class="labelname">
-              <img src="vector/pcmini.svg" alt="Browse games by PC">
-              PC
-            </label>
-            <div class="pc-menu">
-              <h4>Platforms</h4>
-              <hr>
-              <a href="productpage.html">
+        <div class="platforms">
+          <input type="checkbox" id="pc-checkbox">
+          <label for="pc-checkbox" class="labelname">
+            <img src="vector/pcmini.svg" alt="Browse games by PC">
+            PC
+          </label>
+          <div class="pc-menu">
+            <h4>Platforms</h4>
+            <hr>
+            <a href="productpage.html">
               <img src="vector/windows.svg" alt="windows icon">
-              <p>Windows 11</p></a>
-            </div>
-
-            <input type="checkbox" id="ps-checkbox">
-            <label for="ps-checkbox" class="labelname">
-              <img src="vector/psmini.svg" alt="Browse games by PlayStation">
-              PlayStation
-            </label>
-            <div class="ps-menu">
-              <h4>Console</h4>
-              <hr>
-              <div class="consoles">
-                <div class="console-one">
-                  <a href="productpage.html">
-                  <img src="vector/ps4.svg" alt="playstation 4 icon">
-                  <p>PS4</p></a>
-                </div>
-                <div class="console-two">
-                  <a href="productpage.html">
-                  <img src="vector/ps5.svg" alt="playstation 5 icon">
-                  <p>PS5</p></a>
-                </div>
-              </div>
-            </div>
-
-            <input type="checkbox" id="xbox-checkbox">
-            <label for="xbox-checkbox" class="labelname">
-              <img src="vector/xboxmini.svg" alt="Browse games by Xbox">
-              Xbox
-            </label>
-            <div class="xbox-menu">
-              <h4>Console</h4>
-              <hr>
-              <div class="consoles">
-                <div class="console-one">
-                  <a href="productpage.html">
-                  <img src="vector/xboxicon.svg" alt="xbox icon">
-                  <p>XBOX One</p></a>
-                </div>
-                <div class="console-two">
-                  <a href="productpage.html">
-                  <img src="vector/xboxicon.svg" alt="xbox icon">
-                  <p>XBOX X</p></a>
-                </div>
-              </div>
-            </div>
-
-            <input type="checkbox" id="ns-checkbox">
-            <label for="ns-checkbox" class="labelname">
-              <img src="vector/nintendomini.svg" alt="Browse games by Nintendo">
-              Nintendo
-            </label>
-            <div class="ns-menu">
-              <h4>Console</h4>
-              <hr>
-              <a href="productpage.html">
-              <img src="vector/nintendoswitch.svg" alt="nintendo switch icon">
-              <p>Nintendo Switch</p></a>
-            </div>
-
+              <p>Windows 11</p>
+            </a>
           </div>
+
+          <input type="checkbox" id="ps-checkbox">
+          <label for="ps-checkbox" class="labelname">
+            <img src="vector/psmini.svg" alt="Browse games by PlayStation">
+            PlayStation
+          </label>
+          <div class="ps-menu">
+            <h4>Console</h4>
+            <hr>
+            <div class="consoles">
+              <div class="console-one">
+                <a href="productpage.html">
+                  <img src="vector/ps4.svg" alt="playstation 4 icon">
+                  <p>PS4</p>
+                </a>
+              </div>
+              <div class="console-two">
+                <a href="productpage.html">
+                  <img src="vector/ps5.svg" alt="playstation 5 icon">
+                  <p>PS5</p>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <input type="checkbox" id="xbox-checkbox">
+          <label for="xbox-checkbox" class="labelname">
+            <img src="vector/xboxmini.svg" alt="Browse games by Xbox">
+            Xbox
+          </label>
+          <div class="xbox-menu">
+            <h4>Console</h4>
+            <hr>
+            <div class="consoles">
+              <div class="console-one">
+                <a href="productpage.html">
+                  <img src="vector/xboxicon.svg" alt="xbox icon">
+                  <p>XBOX One</p>
+                </a>
+              </div>
+              <div class="console-two">
+                <a href="productpage.html">
+                  <img src="vector/xboxicon.svg" alt="xbox icon">
+                  <p>XBOX X</p>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <input type="checkbox" id="ns-checkbox">
+          <label for="ns-checkbox" class="labelname">
+            <img src="vector/nintendomini.svg" alt="Browse games by Nintendo">
+            Nintendo
+          </label>
+          <div class="ns-menu">
+            <h4>Console</h4>
+            <hr>
+            <a href="productpage.html">
+              <img src="vector/nintendoswitch.svg" alt="nintendo switch icon">
+              <p>Nintendo Switch</p>
+            </a>
+          </div>
+
         </div>
-     
+      </div>
+
       <section class="breadcrumbs">
         <h4>Site Navigation</h4>
         <p>
           <a href="index.html">Gamehub.com</a> >
           <a href="allgames.html">All Games</a> >
-          <b>Cyberpunk</b>
+          <b class="breadcrumbspage"></b>
         </p>
       </section>
+      <!-- <div class="error" hidden></div> -->
       <div class="productpagecontainer">
-        <div class="productpage">
+        <div class="loader">Loading..</div>
+        <!-- <div class="productpage">
           <div class="productquickinfo">
-            <img class="mainimg" src="zoom/GameHub_covers9-72-zoom.jpg" alt="cyberpunk cover photo" >
+            <img class="mainimg">
+            <h1></h1>
+            <p class="pp-p-one"></p>
+            <p class="availablefor"></p>
+            <p id="instantdownload"></p>
+            <h2></h2>
+            <p class="released"></p>
+          </div>
+          <div class="cartbuyheart">
+            <a href="cart.html" class="cart">
+              <img src="vector/cart.svg" alt="cart icon"></a>
+            <a href="checkout.html" class="buy">
+              <b>Buy Now</b>
+            </a>
+            <a href="wishlist.html" class="heart">
+              <img src="vector/wishlist.svg" alt="heart wishlist icon">
+            </a>
+          </div> -->
+        <!-- <div class="productquickinfo">
+            <img class="mainimg" src="zoom/GameHub_covers9-72-zoom.jpg" alt="cyberpunk cover photo">
             <div class="pp-title-icons">
               <h1>CYBERPUNK</h1>
               <div class="pp-mobilevectors">
@@ -180,7 +208,7 @@
             <a href="cart.html" class="cart">
               <img src="vector/cart.svg" alt="cart icon"></a>
             <a href="checkout.html" class="buy">
-                <b>Buy Now</b>
+              <b>Buy Now</b>
             </a>
             <a href="wishlist.html" class="heart">
               <img src="vector/wishlist.svg" alt="heart wishlist icon">
@@ -204,9 +232,9 @@
               throws and special abilities, you'll need to master each of your
               fighter's moves to emerge victorious.
             </p>
-            <!--<button id="toggle"><em>Read More</em></button>
+            <button id="toggle"><em>Read More</em></button>
                                 jacascript needed
-                            inspired by https://codepen.io/legendaryPower/pen/dvJQvB-->
+                            inspired by https://codepen.io/legendaryPower/pen/dvJQvB
             <span id="text">
               As you progress through the game, you'll face tougher opponents,
               each with their unique fighting styles and strategies. You'll
@@ -249,9 +277,9 @@
           </div>
           <div class="visuals">
             <h3>Visuals</h3>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/8X2kIfS6fb8" 
-              title="YouTube video player" 
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/8X2kIfS6fb8"
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowfullscreen></iframe>
 
             <img class="img1" src="img/img1.jpg" alt="cyberpunk cover photo">
@@ -260,14 +288,15 @@
           </div>
           <div class="reviews">
             <h3>Reviews</h3>
-            <img src="img/reviewmelissa.jpg" alt="game review by Melissa F." >
+            <img src="img/reviewmelissa.jpg" alt="game review by Melissa F.">
             <img src="img/reviewjohn.jpg" alt="game review by John K.">
           </div>
-        </div>
-        <div class="backtotop">
-          <a href="#top">Back to top</a>
-        </div>
+        </div> -->
       </div>
+      <!-- <div class="backtotop">
+          <a href="#top">Back to top</a>
+        </div> -->
+
     </main>
   </div>
 
@@ -311,7 +340,7 @@
       <img src="vector/klarna.svg" alt="klarna">
       <img src="vector/mastercard.svg" alt="mastercard">
       <img src="vector/visa.svg" alt="visa">
-      <img src="vector/paypal.svg" alt="paypal" >
+      <img src="vector/paypal.svg" alt="paypal">
       <p>
         Copyright &copy; GAME HUB 2023<br>
         All rights reserved

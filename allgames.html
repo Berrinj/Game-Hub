@@ -14,6 +14,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@600&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/1664c6557b.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="style.css">
+  <script type="module" src="js/games.js"></script>
 </head>
 
 <body>
@@ -39,15 +40,15 @@
         <a href="about.html" class="mobileabout"><img class="aboutvector" src="vector/info.svg" alt="about icon">
           About Us</a>
         <input type="checkbox" id="menu-checkbox">
-        <label for="menu-checkbox" class="moretext"><i class="fas fa-bars fa-3x"></i> 
-        <b>More</b></label>
+        <label for="menu-checkbox" class="moretext"><i class="fas fa-bars fa-3x"></i>
+          <b>More</b></label>
         <p>More</p>
 
         <div class="hamburger-menu">
           <h3>Hello, Marte</h3>
           <a href="allgames.html">Games rated 3+</a>
-          <a href="allgames.html" class="ratedtwo">Games rated 16+</a>
-          <a href="allgames.html" class="ratedthree">Games rated 18+</a>
+          <a href="rated16.html" class="ratedtwo">Games rated 16+</a>
+          <a href="rated18.html" class="ratedthree">Games rated 18+</a>
           <a href="allgames.html">View all games</a>
           <a href="about.html">About us</a>
           <a href="contact.html">Contact us</a>
@@ -62,88 +63,94 @@
     </div>
 
     <main>
-        <div class="topmenu">
-          <form action="productpage.html" class="searchbar">
-            <label for="searchbarinput"><b>search bar</b></label>
-            <input type="text" id="searchbarinput" placeholder="Search for games">
-            <button type="submit">
-              <img src="vector/search.svg" alt="search icon">
-            </button>
-          </form>
+      <div class="topmenu">
+        <form action="productpage.html" class="searchbar">
+          <label for="searchbarinput"><b>search bar</b></label>
+          <input type="text" id="searchbarinput" placeholder="Search for games">
+          <button type="submit">
+            <img src="vector/search.svg" alt="search icon">
+          </button>
+        </form>
 
-          <div class="platforms">
-            <input type="checkbox" id="pc-checkbox">
-            <label for="pc-checkbox" class="labelname">
-              <img src="vector/pcmini.svg" alt="Browse games by PC">
-              PC
-            </label>
-            <div class="pc-menu">
-              <h4>Platforms</h4>
-              <hr>
-              <a href="productpage.html">
+        <div class="platforms">
+          <input type="checkbox" id="pc-checkbox">
+          <label for="pc-checkbox" class="labelname">
+            <img src="vector/pcmini.svg" alt="Browse games by PC">
+            PC
+          </label>
+          <div class="pc-menu">
+            <h4>Platforms</h4>
+            <hr>
+            <a href="productpage.html">
               <img src="vector/windows.svg" alt="windows icon">
-              <p>Windows 11</p></a>
-            </div>
-
-            <input type="checkbox" id="ps-checkbox">
-            <label for="ps-checkbox" class="labelname">
-              <img src="vector/psmini.svg" alt="Browse games by PlayStation">
-              PlayStation
-            </label>
-            <div class="ps-menu">
-              <h4>Console</h4>
-              <hr>
-              <div class="consoles">
-                <div class="console-one">
-                  <a href="productpage.html">
-                  <img src="vector/ps4.svg" alt="playstation 4 icon">
-                  <p>PS4</p></a>
-                </div>
-                <div class="console-two">
-                  <a href="productpage.html">
-                  <img src="vector/ps5.svg" alt="playstation 5 icon">
-                  <p>PS5</p></a>
-                </div>
-              </div>
-            </div>
-
-            <input type="checkbox" id="xbox-checkbox">
-            <label for="xbox-checkbox" class="labelname">
-              <img src="vector/xboxmini.svg" alt="Browse games by Xbox">
-              Xbox
-            </label>
-            <div class="xbox-menu">
-              <h4>Console</h4>
-              <hr>
-              <div class="consoles">
-                <div class="console-one">
-                  <a href="productpage.html">
-                  <img src="vector/xboxicon.svg" alt="xbox icon">
-                  <p>XBOX One</p></a>
-                </div>
-                <div class="console-two">
-                  <a href="productpage.html">
-                  <img src="vector/xboxicon.svg" alt="xbox icon">
-                  <p>XBOX X</p></a>
-                </div>
-              </div>
-            </div>
-
-            <input type="checkbox" id="ns-checkbox">
-            <label for="ns-checkbox" class="labelname">
-              <img src="vector/nintendomini.svg" alt="Browse games by Nintendo">
-              Nintendo
-            </label>
-            <div class="ns-menu">
-              <h4>Console</h4>
-              <hr>
-              <a href="productpage.html">
-              <img src="vector/nintendoswitch.svg" alt="nintendo switch icon">
-              <p>Nintendo Switch</p></a>
-            </div>
-
+              <p>Windows 11</p>
+            </a>
           </div>
+
+          <input type="checkbox" id="ps-checkbox">
+          <label for="ps-checkbox" class="labelname">
+            <img src="vector/psmini.svg" alt="Browse games by PlayStation">
+            PlayStation
+          </label>
+          <div class="ps-menu">
+            <h4>Console</h4>
+            <hr>
+            <div class="consoles">
+              <div class="console-one">
+                <a href="productpage.html">
+                  <img src="vector/ps4.svg" alt="playstation 4 icon">
+                  <p>PS4</p>
+                </a>
+              </div>
+              <div class="console-two">
+                <a href="productpage.html">
+                  <img src="vector/ps5.svg" alt="playstation 5 icon">
+                  <p>PS5</p>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <input type="checkbox" id="xbox-checkbox">
+          <label for="xbox-checkbox" class="labelname">
+            <img src="vector/xboxmini.svg" alt="Browse games by Xbox">
+            Xbox
+          </label>
+          <div class="xbox-menu">
+            <h4>Console</h4>
+            <hr>
+            <div class="consoles">
+              <div class="console-one">
+                <a href="productpage.html">
+                  <img src="vector/xboxicon.svg" alt="xbox icon">
+                  <p>XBOX One</p>
+                </a>
+              </div>
+              <div class="console-two">
+                <a href="productpage.html">
+                  <img src="vector/xboxicon.svg" alt="xbox icon">
+                  <p>XBOX X</p>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <input type="checkbox" id="ns-checkbox">
+          <label for="ns-checkbox" class="labelname">
+            <img src="vector/nintendomini.svg" alt="Browse games by Nintendo">
+            Nintendo
+          </label>
+          <div class="ns-menu">
+            <h4>Console</h4>
+            <hr>
+            <a href="productpage.html">
+              <img src="vector/nintendoswitch.svg" alt="nintendo switch icon">
+              <p>Nintendo Switch</p>
+            </a>
+          </div>
+
         </div>
+      </div>
 
       <div class="main-content">
         <section class="breadcrumbs">
@@ -157,27 +164,39 @@
           <h2>All games</h2>
         </section>
         <div class="gamesrow">
+          <div class="loader">Loading..</div>
           <div class="games-container">
-            <div class="cyberpunk">
-              <a href="productpage.html"><img src="games/GameHub_covers9-72.jpg" alt="Cyberpunk cover"></a>
-              <img class="rating" src="vector/starscyberpunk.svg" alt="game rating">
-              <h3>CYBERPUNK</h3>
-              <p>
-                -Available for PS4, PS5, Nintendo Switch, XBOX One & XBOX
-                Series X
-              </p>
-              <p>-Instant download</p>
-              <div class="price-box">
-                <h4>$35</h4>
-              </div>
+            <img class="productimg" src="" alt=""></a>
+            <h3 class="title"></h3>
+            <div class="price-box">
+              <h4></h4>
             </div>
+          </div>
+        </div>
+        <!-- <div class="games-container">
+            <img class="productimg" src="" alt=""></a>
+            <img class="rating" src="vector/starscyberpunk.svg" alt="game rating">
+            <h3 class="title"></h3>
+            <p>
+              -Available for PS4, PS5, Nintendo Switch, XBOX One & XBOX
+              Series X
+            </p>
+            <p>
+              -Instant download
+            </p>
+            <div class="price-box">
+              <h4></h4>
+            </div>
+          </div> -->
+
+        <!--
           </div>
 
           <div class="games-container">
             <div class="game2">
-              <img src="games/GameHub_covers8-72.jpg" alt="Boxer cover">
+              <img class="productimg" src="games/GameHub_covers8-72.jpg" alt="Boxer cover">
               <img class="rating" src="vector/starsboxer.svg" alt="game rating">
-              <h3>BOXER</h3>
+              <h3 class="title">BOXER</h3>
               <p>-Available for PS4, XBOX One and PC</p>
               <p>-Instant download</p>
               <br>
@@ -189,9 +208,9 @@
 
           <div class="games-container">
             <div class="game3">
-              <img src="games/GameHub_covers7-72.jpg" alt="Racing cover">
+              <img class="productimg" src="games/GameHub_covers7-72.jpg" alt="Racing cover">
               <img class="rating" src="vector/starsracing.svg" alt="game rating">
-              <h3>RACING</h3>
+              <h3 class="title">RACING</h3>
               <p>-Available for PC and Nintendo Switch</p>
               <p>-Instant download</p>
               <br>
@@ -302,15 +321,15 @@
               <div class="price-box">
                 <h4>$30</h4>
               </div>
-            </div>
-          </div>
-        </div>
-        <div class="backtotop">
-          <a href="#top">Back to top</a>
-        </div>
+            </div> -->
+      </div>
+      <div class="backtotop">
+        <a href="#top">Back to top</a>
       </div>
     </main>
   </div>
+
+
 
   <section class="testnewsletter">
     <div class="newsletterall">

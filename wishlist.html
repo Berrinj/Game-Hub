@@ -12,6 +12,7 @@
   <meta name="keywords" content="console games, playstation, xbox, nintendo, PC">
   <script src="https://kit.fontawesome.com/1664c6557b.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="style.css">
+  <script type="module" src="js/wishlist.js"></script>
 </head>
 
 <body>
@@ -39,7 +40,7 @@
           About Us</a>
         <input type="checkbox" id="menu-checkbox">
         <label for="menu-checkbox" class="moretext"><i class="fas fa-bars fa-3x"></i>
-        <b>More</b></label>
+          <b>More</b></label>
         <p>More</p>
         <div class="hamburger-menu">
           <h3>Hello, Marte</h3>
@@ -60,88 +61,94 @@
     </div>
 
     <main>
-        <div class="topmenu">
-          <form action="#" class="searchbar">
-            <label for="searchbarinput"><b>search bar</b></label>
-            <input type="text" id="searchbarinput" placeholder="Search for games">
-            <button type="submit">
-              <img src="vector/search.svg" alt="search icon">
-            </button>
-          </form>
+      <div class="topmenu">
+        <form action="#" class="searchbar">
+          <label for="searchbarinput"><b>search bar</b></label>
+          <input type="text" id="searchbarinput" placeholder="Search for games">
+          <button type="submit">
+            <img src="vector/search.svg" alt="search icon">
+          </button>
+        </form>
 
-          <div class="platforms">
-            <input type="checkbox" id="pc-checkbox">
-            <label for="pc-checkbox" class="labelname">
-              <img src="vector/pcmini.svg" alt="Browse games by PC">
-              PC
-            </label>
-            <div class="pc-menu">
-              <h4>Platforms</h4>
-              <hr>
-              <a href="productpage.html">
+        <div class="platforms">
+          <input type="checkbox" id="pc-checkbox">
+          <label for="pc-checkbox" class="labelname">
+            <img src="vector/pcmini.svg" alt="Browse games by PC">
+            PC
+          </label>
+          <div class="pc-menu">
+            <h4>Platforms</h4>
+            <hr>
+            <a href="productpage.html">
               <img src="vector/windows.svg" alt="windows icon">
-              <p>Windows 11</p></a>
-            </div>
-
-            <input type="checkbox" id="ps-checkbox">
-            <label for="ps-checkbox" class="labelname">
-              <img src="vector/psmini.svg" alt="Browse games by PlayStation">
-              PlayStation
-            </label>
-            <div class="ps-menu">
-              <h4>Console</h4>
-              <hr>
-              <div class="consoles">
-                <div class="console-one">
-                  <a href="productpage.html">
-                  <img src="vector/ps4.svg" alt="playstation 4 icon">
-                  <p>PS4</p></a>
-                </div>
-                <div class="console-two">
-                  <a href="productpage.html">
-                  <img src="vector/ps5.svg" alt="playstation 5 icon">
-                  <p>PS5</p></a>
-                </div>
-              </div>
-            </div>
-
-            <input type="checkbox" id="xbox-checkbox">
-            <label for="xbox-checkbox" class="labelname">
-              <img src="vector/xboxmini.svg" alt="Browse games by Xbox">
-              Xbox
-            </label>
-            <div class="xbox-menu">
-              <h4>Console</h4>
-              <hr>
-              <div class="consoles">
-                <div class="console-one">
-                  <a href="productpage.html">
-                  <img src="vector/xboxicon.svg" alt="xbox icon">
-                  <p>XBOX One</p></a>
-                </div>
-                <div class="console-two">
-                  <a href="productpage.html">
-                  <img src="vector/xboxicon.svg" alt="xbox icon">
-                  <p>XBOX X</p></a>
-                </div>
-              </div>
-            </div>
-
-            <input type="checkbox" id="ns-checkbox">
-            <label for="ns-checkbox" class="labelname">
-              <img src="vector/nintendomini.svg" alt="Browse games by Nintendo">
-              Nintendo
-            </label>
-            <div class="ns-menu">
-              <h4>Console</h4>
-              <hr>
-              <a href="productpage.html">
-              <img src="vector/nintendoswitch.svg" alt="nintendo switch icon">
-              <p>Nintendo Switch</p></a>
-            </div>
-
+              <p>Windows 11</p>
+            </a>
           </div>
+
+          <input type="checkbox" id="ps-checkbox">
+          <label for="ps-checkbox" class="labelname">
+            <img src="vector/psmini.svg" alt="Browse games by PlayStation">
+            PlayStation
+          </label>
+          <div class="ps-menu">
+            <h4>Console</h4>
+            <hr>
+            <div class="consoles">
+              <div class="console-one">
+                <a href="productpage.html">
+                  <img src="vector/ps4.svg" alt="playstation 4 icon">
+                  <p>PS4</p>
+                </a>
+              </div>
+              <div class="console-two">
+                <a href="productpage.html">
+                  <img src="vector/ps5.svg" alt="playstation 5 icon">
+                  <p>PS5</p>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <input type="checkbox" id="xbox-checkbox">
+          <label for="xbox-checkbox" class="labelname">
+            <img src="vector/xboxmini.svg" alt="Browse games by Xbox">
+            Xbox
+          </label>
+          <div class="xbox-menu">
+            <h4>Console</h4>
+            <hr>
+            <div class="consoles">
+              <div class="console-one">
+                <a href="productpage.html">
+                  <img src="vector/xboxicon.svg" alt="xbox icon">
+                  <p>XBOX One</p>
+                </a>
+              </div>
+              <div class="console-two">
+                <a href="productpage.html">
+                  <img src="vector/xboxicon.svg" alt="xbox icon">
+                  <p>XBOX X</p>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <input type="checkbox" id="ns-checkbox">
+          <label for="ns-checkbox" class="labelname">
+            <img src="vector/nintendomini.svg" alt="Browse games by Nintendo">
+            Nintendo
+          </label>
+          <div class="ns-menu">
+            <h4>Console</h4>
+            <hr>
+            <a href="productpage.html">
+              <img src="vector/nintendoswitch.svg" alt="nintendo switch icon">
+              <p>Nintendo Switch</p>
+            </a>
+          </div>
+
         </div>
+      </div>
 
       <section class="breadcrumbs">
         <h4>Site Navigation</h4>
@@ -151,11 +158,11 @@
       <div class="wishlistpagecontainer">
         <div class="wishlist-heading">
           <h1>Wishlist</h1>
-          <h4>2 items</h4>
+          <!-- <h4>2 items</h4> -->
         </div>
         <hr>
         <div class="wishlistgames">
-          <div class="wishlist1">
+          <!-- <div class="wishlist1">
             <a href="productpage.html">
               <img src="Games/GameHub_covers9-72.jpg" alt="Game cover image">
               <div class="nameheart">
@@ -172,8 +179,8 @@
               Buy Now</a>
             <a href="cart.html" class="wishlist-button">
               Add to cart</a>
-          </div>
-          <div class="wishlist2">
+          </div> -->
+          <!-- <div class="wishlist2">
             <img src="Games/GameHub_covers3-72.jpg" alt="Game cover image">
             <div class="nameheart">
               <h2>Black</h2>
@@ -187,9 +194,9 @@
               Buy Now</a>
             <a href="cart.html" class="wishlist-button">
               Add to cart</a>
-          </div>
+          </div> -->
         </div>
-        <p>No more items</p>
+        <p class="nomoreitems">No more items</p>
       </div>
     </main>
   </div>
