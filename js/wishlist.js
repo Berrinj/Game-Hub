@@ -9,10 +9,14 @@ if(favorites.length === 0) {
     noMoreItems.innerHTML = "";
 };
 
+favoritesContainer.innerHTML = "";
+
 favorites.forEach(favorite => {
-    
+    try {
     favoritesContainer.innerHTML += `<div class="wishlist1">
-    <img src="${favorite.image}">
+                                        <a href="productpage.html?id=${favorite.id}">
+                                        <img src="${favorite.image}">
+                                        </a>
                                         <div class="nameheart">
                                             <h2>${favorite.title}</h2>
                                             <i class="fa fa-heart fa-xl favheart"></i>
@@ -23,8 +27,12 @@ favorites.forEach(favorite => {
                                             Series X -Instant download
                                         </p>
                                         <h3>Price: ${favorite.price}</h3>
-                                        <button class="wishlist-button">Buy Now</button>
+                                        <button class="wishlist-button">Remove item</button>
                                         <button class="wishlist-button">Add to cart</button>
                                     </div>`
+} catch(error) {
+    favoritesContainer.innerHTML = `<div class="error">We are so sorry, an error occured while loading this page.</div>`;
+    console.log(error, `Sorry, an error occured`);
+}
 });
 

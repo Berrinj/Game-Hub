@@ -433,26 +433,7 @@ a:active {
   margin: 0px 8px;
 }
 
-.price-box {
-  width: 63px;
-  background-color: #1b203d;
-  margin: 8px;
-  padding: 0 5px 0 5px;
-}
 
-.fa-heart {
-  padding: 10px 10px 20px 10px;
-  display: flex;
-  justify-content: end;
-}
-
-.gameheart {
-  padding: 0;
-}
-
-.favheart {
-  padding: 0;
-}
 
 
 .price-box h4 {
@@ -482,6 +463,38 @@ a:active {
   width: 228px;
   margin: 8px 8px 0px 8px;
   color: #1b203d;
+}
+
+.price-info {
+  display: flex;
+  align-items: center;
+}
+
+.price-info p {
+  max-width: 60px;
+  margin: 0;
+  font-style: italic;
+}
+
+.price-box {
+  width: 63px;
+  background-color: #1b203d;
+  margin: 8px;
+  padding: 0 5px 0 5px;
+}
+
+.fa-heart {
+  padding: 10px 10px 20px 10px;
+  display: flex;
+  justify-content: end;
+}
+
+.gameheart {
+  padding: 0;
+}
+
+.favheart {
+  padding: 0;
 }
 
 .cyberpunk {
@@ -959,6 +972,7 @@ h4 {
 .shopping-cart img {
   float: left;
   width: 150px;
+  margin-bottom: 10px;
 }
 
 .cartinfo {
@@ -968,7 +982,14 @@ h4 {
 }
 
 .price {
-  font-size: 26px;
+  font-size: 1.2rem;
+}
+
+.deleteitem {
+  display: flex;
+  /* justify-content: flex-end; */
+  font-style: italic;
+  cursor: pointer;
 }
 
 .promocodefield {

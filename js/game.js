@@ -1,6 +1,7 @@
 // import {heartIconChange} from "./wishlist.js";
 //could not read classList properties?
 import { getExistingFavs } from "./utils/favFunctions.js";
+import { getCartItems } from "./utils/getCartItems.js";
 const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
 const id = params.get("id");
@@ -12,6 +13,7 @@ const url = "https://api.noroff.dev/api/v1/gamehub/" + id;
 const productContainer = document.querySelector(".productpagecontainer");
 
 const favorites = getExistingFavs();
+// const cart = getCartItems();
 
 async function getGame() {
     try {
@@ -28,7 +30,7 @@ async function getGame() {
     let cssClass = "far";
 
     const doesObjectExist = favorites.find(function(fav) {
-        console.log(fav);
+        // console.log(fav);
 
         return fav.id === result.id;
     });
@@ -50,18 +52,61 @@ async function getGame() {
                                         <h2>Price: $${result.price}</h2>
                                         <div class="cartbuyheart">
                                         <button class="cart">
-                                        <img src="vector/cart.svg" alt="cart icon"></button>
-                                        <a href="checkout.html" class="buy">
-                                        <b>Buy Now</b>
+                                        <i class="fa-solid fa-cart-shopping fa-2xl" data-id="${result.id}" data-name="${result.title}" data-image="${result.image}" data-price="${result.price}"></i>
+                                        </button>
+                                        <a href="cart.html" class="buy">
+                                        <b>Go to cart</b>
                                         </a>
                                         <button class="heart">
-                                        <i class="${cssClass} fa-heart fa-2xl gameheart" data-id="${result.id}" data-name="${result.title}"></i>
+                                        <i class="${cssClass} fa-heart fa-2xl gameheart" data-id="${result.id}" data-name="${result.title}" data-image="${result.image}" data-price="${result.price}"></i>
                                         </button>
                                     </div>
                                     </div>
                                 </div>`;
 
-        const favButton = document.querySelectorAll(".productpagecontainer i");
+// Cart icon
+        const cartButton = document.querySelector(".productpagecontainer i.fa-cart-shopping");
+        cartButton.addEventListener("click", cartIconChange);
+
+        function cartIconChange() {
+            
+            const idLocalStorage = this.dataset.id;
+            const titleLocalStorage = this.dataset.name;
+            const imageLocalStorage = this.dataset.image;
+            const priceLocalStorage = this.dataset.price;
+            // console.log(idLocalStorage,  titleLocalStorage, imageLocalStorage, priceLocalStorage)
+  
+            const currentCartItems = getCartItems();
+            // console.log(currentCartItems);
+
+            const productExists = currentCartItems.find(function(cart) {
+                return cart.id === idLocalStorage;
+            });
+
+            
+            if (!productExists) {
+                const product = {title: titleLocalStorage, id: idLocalStorage, image: imageLocalStorage, price: priceLocalStorage};
+                currentCartItems.push(product);
+                saveCartItem(currentCartItems);
+            } else {
+                const newcartItem = currentCartItems.filter((cart) => cart.id !== idLocalStorage);
+                saveCartItem(newcartItem);
+            };
+        
+            // console.log("does it exsits: ", productExists);
+        
+            // console.log("id:", idLocalStorage);
+        };
+
+        getCartItems();
+
+        function saveCartItem(incart) {
+            localStorage.setItem("incart", JSON.stringify(incart));
+        };
+
+
+//Favorite icon
+        const favButton = document.querySelectorAll(".productpagecontainer i.fa-heart");
         favButton.forEach((button) => {
             button.addEventListener("click", heartIconChange);
         });
@@ -75,11 +120,13 @@ async function getGame() {
             
             const idLocalStorage = this.dataset.id;
             const titleLocalStorage = this.dataset.name;
+            const imageLocalStorage = this.dataset.image;
+            const priceLocalStorage = this.dataset.price;
 
             // console.log(titleLocalStorage, idLocalStorage);
         
             const currentFavs = getExistingFavs();
-            console.log(currentFavs);
+            // console.log(currentFavs);
         
         
             const productExists = currentFavs.find(function(fav) {
@@ -87,7 +134,7 @@ async function getGame() {
             });
 
             if (!productExists) {
-                const product = {title: titleLocalStorage, id: idLocalStorage};
+                const product = {title: titleLocalStorage, id: idLocalStorage, image: imageLocalStorage, price: priceLocalStorage};
                 currentFavs.push(product);
                 saveFavorites(currentFavs);
             } else {
@@ -95,9 +142,9 @@ async function getGame() {
                 saveFavorites(newFavs);
             };
         
-            console.log("does it exsits: ", productExists);
+            // console.log("does it exsits: ", productExists);
         
-            console.log("id:", idLocalStorage);
+            // console.log("id:", idLocalStorage);
         }
         
         getExistingFavs();
@@ -105,18 +152,6 @@ async function getGame() {
         function saveFavorites(favs) {
             localStorage.setItem("favorites", JSON.stringify(favs));
         };
-
-
-
-    const addToCart = document.querySelector(".cart");
-
-    addToCart.addEventListener("click", addingToCart);
-    
-
-
-    function addingToCart(add) {
-        console.log("added to cart");
-    };
 
 
 } catch(error) {

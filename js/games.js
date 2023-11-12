@@ -17,13 +17,17 @@ async function getGames() {
     const result = await response.json();
 
     gamesRow.innerHTML = "";
+    
 
     for(let i = 0; i < result.length; i++){
-
+        let saleFont = "white";
         let cssClass = "far";
+        let saleMessage = "";
 
         if (result[i].onSale === true) {
             result[i].price = result[i].discountedPrice;
+            // saleFont = "red";
+            saleMessage = "On sale!"
         };
 
         const doesObjectExist = favorites.find(function(fav) {
@@ -31,20 +35,23 @@ async function getGames() {
             return fav.id === result[i].id;
         });
 
-        console.log(doesObjectExist);
+        // console.log(doesObjectExist);
 
         if (doesObjectExist) {
             cssClass = "fa-solid";
         };
 
-        gamesRow.innerHTML += `<a href="productpage.html?id=${result[i].id}">
-                                    <div class="games-container">
+        gamesRow.innerHTML += `<div class="games-container">
+                                    <a href="productpage.html?id=${result[i].id}">
                                     <img class="productimg" src="${result[i].image}">
                                     <h3>${result[i].title}</h3>
                                     <p>-Available for PS4, XBOX One and PC</p>
                                     <p>-instant download</p>
+                                    <div class="price-info">
                                     <div class="price-box">
-                                    <h4>$${result[i].price}</h4>
+                                    <h4 style="color: ${saleFont}">$${result[i].price}</h4>
+                                    </div>
+                                    <p class="on-sale-message">${saleMessage}</p>
                                     </div>
                                     </a>
                                     <i class="${cssClass} fa-heart fa-2xl" data-id="${result[i].id}" data-name="${result[i].title}" data-image="${result[i].image}" data-price="${result[i].price}"></i>
@@ -73,7 +80,7 @@ async function getGames() {
         // console.log(titleLocalStorage, idLocalStorage);
     
         const currentFavs = getExistingFavs();
-        console.log(currentFavs);
+        // console.log(currentFavs);
     
     
         const productExists = currentFavs.find(function(fav) {
@@ -89,7 +96,7 @@ async function getGames() {
             saveFavorites(newFavs);
         };
     
-        console.log("does it exsits: ", productExists);
+        // console.log("does it exsits: ", productExists);
     
         // console.log("id:", idLocalStorage);
     }
