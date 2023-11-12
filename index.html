@@ -7,13 +7,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Marte Lilleberre">
   <meta name="dcterms.created" content="sat., 29 apr 2023 18:59:56 GMT">
-  <meta name="description" content="Welcome to Game Hub web store, where you can buy and instantly download games for all your devices">
+  <meta name="description"
+    content="Welcome to Game Hub web store, where you can buy and instantly download games for all your devices">
   <meta name="keywords" content="console games, playstation, xbox, nintendo, PC">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@600&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/1664c6557b.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="style.css">
+  <script type="module" src="js/games.js"></script>
 </head>
 
 <body>
@@ -33,6 +35,7 @@
           My Profile</a>
         <a href="cart.html" class="mobilecart"><img class="cartvector" src="vector/cart.svg" alt="cart icon"> My
           Cart</a>
+        <p class="cart-status"></p>
         <a href="wishlist.html" class="mobilewishlist"><img class="wishlistvector" src="vector/wishlist.svg"
             alt="wishlist icon">
           My Wishlist</a>
@@ -40,13 +43,13 @@
           About Us</a>
         <input type="checkbox" id="menu-checkbox">
         <label for="menu-checkbox" class="moretext"><i class="fas fa-bars fa-3x"></i>
-        <b>more</b></label>
+          <b>more</b></label>
         <p>More</p>
         <div class="hamburger-menu">
           <h3>Hello, Marte</h3>
           <a href="allgames.html">Games rated 3+</a>
-          <a href="allgames.html" class="ratedtwo">Games rated 16+</a>
-          <a href="allgames.html" class="ratedthree">Games rated 18+</a>
+          <a href="rated16.html" class="ratedtwo">Games rated 16+</a>
+          <a href="rated18.html" class="ratedthree">Games rated 18+</a>
           <a href="allgames.html">View all games</a>
           <a href="about.html">About us</a>
           <a href="contact.html">Contact us</a>
@@ -60,90 +63,96 @@
       </nav>
     </div>
     <main>
-        <div class="topmenu">
-          <form action="productpage.html" class="searchbar">
-            <label for="searchbarinput"><b>search bar</b></label>
-            <input type="text" id="searchbarinput" placeholder="Search for games">
-            <button type="submit">
-              <img src="vector/search.svg" alt="search icon">
-            </button>
-          </form>
+      <div class="topmenu">
+        <form action="productpage.html" class="searchbar">
+          <label for="searchbarinput"><b>search bar</b></label>
+          <input type="text" id="searchbarinput" placeholder="Search for games">
+          <button type="submit">
+            <img src="vector/search.svg" alt="search icon">
+          </button>
+        </form>
 
-          <div class="platforms">
-            <input type="checkbox" id="pc-checkbox">
-            <label for="pc-checkbox" class="labelname">
-              <img src="vector/pcmini.svg" alt="Browse games by PC">
-              PC
-            </label>
-            <div class="pc-menu">
-              <h4>Platforms</h4>
-              <hr>
-              <a href="productpage.html">
+        <div class="platforms">
+          <input type="checkbox" id="pc-checkbox">
+          <label for="pc-checkbox" class="labelname">
+            <img src="vector/pcmini.svg" alt="Browse games by PC">
+            PC
+          </label>
+          <div class="pc-menu">
+            <h4>Platforms</h4>
+            <hr>
+            <a href="productpage.html">
               <img src="vector/windows.svg" alt="windows icon">
-              <p>Windows 11</p></a>
-            </div>
-
-            <input type="checkbox" id="ps-checkbox">
-            <label for="ps-checkbox" class="labelname">
-              <img src="vector/psmini.svg" alt="Browse games by PlayStation">
-              PlayStation
-            </label>
-            <div class="ps-menu">
-              <h4>Console</h4>
-              <hr>
-              <div class="consoles">
-                <div class="console-one">
-                  <a href="productpage.html">
-                  <img src="vector/ps4.svg" alt="playstation 4 icon">
-                  <p>PS4</p></a>
-                </div>
-                <div class="console-two">
-                  <a href="productpage.html">
-                  <img src="vector/ps5.svg" alt="playstation 5 icon">
-                  <p>PS5</p></a>
-                </div>
-              </div>
-            </div>
-
-            <input type="checkbox" id="xbox-checkbox">
-            <label for="xbox-checkbox" class="labelname">
-              <img src="vector/xboxmini.svg" alt="Browse games by Xbox">
-              Xbox
-            </label>
-            <div class="xbox-menu">
-              <h4>Console</h4>
-              <hr>
-              <div class="consoles">
-                <div class="console-one">
-                  <a href="productpage.html">
-                  <img src="vector/xboxicon.svg" alt="xbox icon">
-                  <p>XBOX One</p></a>
-                </div>
-                <div class="console-two">
-                  <a href="productpage.html">
-                  <img src="vector/xboxicon.svg" alt="xbox icon">
-                  <p>XBOX X</p></a>
-                </div>
-              </div>
-            </div>
-
-            <input type="checkbox" id="ns-checkbox">
-            <label for="ns-checkbox" class="labelname">
-              <img src="vector/nintendomini.svg" alt="Browse games by Nintendo">
-              Nintendo
-            </label>
-            <div class="ns-menu">
-              <h4>Console</h4>
-              <hr>
-              <a href="productpage.html">
-              <img src="vector/nintendoswitch.svg" alt="nintendo switch icon">
-              <p>Nintendo Switch</p></a>
-            </div>
-
+              <p>Windows 11</p>
+            </a>
           </div>
-          
+
+          <input type="checkbox" id="ps-checkbox">
+          <label for="ps-checkbox" class="labelname">
+            <img src="vector/psmini.svg" alt="Browse games by PlayStation">
+            PlayStation
+          </label>
+          <div class="ps-menu">
+            <h4>Console</h4>
+            <hr>
+            <div class="consoles">
+              <div class="console-one">
+                <a href="productpage.html">
+                  <img src="vector/ps4.svg" alt="playstation 4 icon">
+                  <p>PS4</p>
+                </a>
+              </div>
+              <div class="console-two">
+                <a href="productpage.html">
+                  <img src="vector/ps5.svg" alt="playstation 5 icon">
+                  <p>PS5</p>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <input type="checkbox" id="xbox-checkbox">
+          <label for="xbox-checkbox" class="labelname">
+            <img src="vector/xboxmini.svg" alt="Browse games by Xbox">
+            Xbox
+          </label>
+          <div class="xbox-menu">
+            <h4>Console</h4>
+            <hr>
+            <div class="consoles">
+              <div class="console-one">
+                <a href="productpage.html">
+                  <img src="vector/xboxicon.svg" alt="xbox icon">
+                  <p>XBOX One</p>
+                </a>
+              </div>
+              <div class="console-two">
+                <a href="productpage.html">
+                  <img src="vector/xboxicon.svg" alt="xbox icon">
+                  <p>XBOX X</p>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <input type="checkbox" id="ns-checkbox">
+          <label for="ns-checkbox" class="labelname">
+            <img src="vector/nintendomini.svg" alt="Browse games by Nintendo">
+            Nintendo
+          </label>
+          <div class="ns-menu">
+            <h4>Console</h4>
+            <hr>
+            <a href="productpage.html">
+              <img src="vector/nintendoswitch.svg" alt="nintendo switch icon">
+              <p>Nintendo Switch</p>
+            </a>
+          </div>
+
         </div>
-      
+
+      </div>
+
       <section class="promo">
         <div class="promotext">
           <h1>Welcome to Game Hub</h1>
@@ -167,9 +176,37 @@
       <div class="promobanner">
         <p>Right now: Buy 3 games and get 1 for free! Promo code: 45862</p>
       </div>
-      <div class="main-content">
-        <section class="cat">
-          <h2>Featured</h2>
+      <section class="breadcrumbs">
+        <h4>Site Navigation</h4>
+        <p>
+          <a href="index.html">Gamehub.com</a>
+          <!-- ><a href="allgames.html">All Games</a> > -->
+          <b class="breadcrumbspage"></b>
+        </p>
+      </section>
+      <section class="cat">
+        <h2>All games</h2>
+      </section>
+      <section class="filter-buttons">
+        <p>Sort games by:</p>
+        <button id="all">3+</button>
+        <button id="sixteen">16+</button>
+        <button id="eighteen">18+</button>
+        <p>(Sort option added but not finished)</p>
+      </section>
+      <div class="gamesrow">
+        <div class="loader"> Loading...
+          <!-- <div class="price-box"></div> -->
+        </div>
+        <!-- <div class="games-container">
+          <img class="productimg" src="" alt=""></a>
+          <h3 class="title"></h3>
+          <div class="price-box">
+            <h4></h4>
+          </div> -->
+      </div>
+      <!-- <section class="cat">
+          <h2>On sale</h2>
           <div class="viewall-button">
             <a href="allgames.html">View all</a>
           </div>
@@ -368,13 +405,15 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="backtotop">
-          <a href="#top">Back to top</a>
-        </div>
+        </div> -->
+      <div class="backtotop">
+        <a href="#top">Back to top</a>
       </div>
-    </main>
   </div>
+  </main>
+  </div>
+
+  <!-- </div> -->
 
   <section class="testnewsletter">
     <div class="newsletterall">
