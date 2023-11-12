@@ -1111,6 +1111,13 @@ hr {
 }
 
 /*CHECKOUT*/
+
+.main-checkout {
+  display: flex;
+  flex-direction: column;
+
+}
+
 .checkout-header {
   text-align: center;
 }
@@ -1139,7 +1146,8 @@ hr {
 
 .checkout-items {
   height: 100px;
-  position: relative;
+  /* position: relative; */
+  display: contents;
 }
 
 .checkout-img {
