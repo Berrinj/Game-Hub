@@ -1,5 +1,7 @@
 import { getExistingFavs } from "./utils/favFunctions.js";
 import { getCartItems } from "./utils/getCartItems.js";
+
+
 const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
 const id = params.get("id");
@@ -9,8 +11,10 @@ const breadcrumbsPage = document.querySelector(".breadcrumbspage");
 const url = "https://api.noroff.dev/api/v1/gamehub/" + id;
 const main = document.querySelector("main");
 const productContainer = document.querySelector(".productpagecontainer");
+const cartNumberOfItems = document.querySelector(".cart-status");
 
 const favorites = getExistingFavs();
+const currentCartItems = getCartItems();
 
 async function getGame() {
     try {
@@ -35,7 +39,8 @@ async function getGame() {
     if (doesObjectExist) {
         cssClass = "fa-solid";
     };
-    
+
+    cartNumberOfItems.innerHTML = `<p class="cart-status">${currentCartItems.length} item(s)</p>`;
 
     breadcrumbsPage.innerHTML += `<b class="breadcrumbspage">${result.title}</b>`;
     productContainer.innerHTML += `<div class"productpagecontainer">
@@ -64,16 +69,17 @@ async function getGame() {
 // Cart icon
         const cartButton = document.querySelector(".productpagecontainer i.fa-cart-shopping");
         cartButton.addEventListener("click", cartIconChange);
+        const cartBackground = document.querySelector(".cart");
+        const cartIconColor = document.querySelector(".fa-cart-shopping");
 
         function cartIconChange() {
-            
+
             const idLocalStorage = this.dataset.id;
             const titleLocalStorage = this.dataset.name;
             const imageLocalStorage = this.dataset.image;
             const priceLocalStorage = this.dataset.price;
 
             const currentCartItems = getCartItems();
-
 
             const productExists = currentCartItems.find(function(cart) {
                 return cart.id === idLocalStorage;
@@ -84,9 +90,16 @@ async function getGame() {
                 const product = {title: titleLocalStorage, id: idLocalStorage, image: imageLocalStorage, price: priceLocalStorage};
                 currentCartItems.push(product);
                 saveCartItem(currentCartItems);
+
+                cartIconColor.style.color = "green";
+                cartNumberOfItems.innerHTML = `<p class="cart-status">${currentCartItems.length} item(s)</p>`;
+                // cartBackground.style.backgroundColor = "lightgreen";
             } else {
                 const newcartItem = currentCartItems.filter((cart) => cart.id !== idLocalStorage);
                 saveCartItem(newcartItem);
+                cartIconColor.style.color = "";
+
+                // cartBackground.style.backgroundColor = "";
             };
 
         };
@@ -98,7 +111,7 @@ async function getGame() {
         };
 
 
-//Favorite icon
+//Favorite icon // tried import export but here I just couldn't make it work.
         const favButton = document.querySelectorAll(".productpagecontainer i.fa-heart");
         favButton.forEach((button) => {
             button.addEventListener("click", heartIconChange);

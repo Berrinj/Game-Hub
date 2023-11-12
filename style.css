@@ -133,6 +133,11 @@ nav p {
   margin: 0;
 }
 
+.cart-status {
+  padding: 5px;
+  font-style: italic;
+}
+
 .hamburger-menu,
 #menu-checkbox {
   display: none;

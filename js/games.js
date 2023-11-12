@@ -1,4 +1,5 @@
 import { getExistingFavs } from "./utils/favFunctions.js";
+import { getCartItems } from "./utils/getCartItems.js";
 
 export const url = "https://api.noroff.dev/api/v1/gamehub/";
 
@@ -9,7 +10,9 @@ export const gamesRow = document.querySelector(".gamesrow");
 export const priceBox = document.querySelector(".price-box");
 
 const main = document.querySelector("main");
+const cartNumberOfItems = document.querySelector(".cart-status");
 const favorites = getExistingFavs();
+const currentCartItems = getCartItems();
 
 async function getGames() {
 
@@ -40,6 +43,7 @@ async function getGames() {
         if (doesObjectExist) {
             cssClass = "fa-solid";
         };
+        cartNumberOfItems.innerHTML = `<p class="cart-status">${currentCartItems.length} item(s)</p>`;
 
         gamesRow.innerHTML += `<div class="games-container">
                                     <a href="productpage.html?id=${result[i].id}">
