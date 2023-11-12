@@ -11,6 +11,8 @@ async function ratedEighteen() {
     const response = await fetch(url);
     const result = await response.json();
 
+    gamesRow.innerHTML = "";
+
     const ageRatingToTarget = "18+";
         const filteredAge = result.filter(age => age.ageRating === ageRatingToTarget);
         console.log(filteredAge);

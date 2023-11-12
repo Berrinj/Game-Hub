@@ -5,6 +5,7 @@ const gameContainer = document.querySelector(".games-container");
 const gamesRow = document.querySelector(".gamesrow");
 
 const priceBox = document.querySelector(".price-box");
+const main = document.querySelector("main");
 
 async function ratedSixteen() {
 
@@ -12,9 +13,10 @@ async function ratedSixteen() {
     const response = await fetch(url);
     const result = await response.json();
 
+    gamesRow.innerHTML = "";
+
     const ageRatingToTarget = "16+";
         const filteredAge = result.filter(age => age.ageRating === ageRatingToTarget);
-        console.log(filteredAge);
 
     for (let i = 0; i < filteredAge.length; i++){
             gamesRow.innerHTML += `<a href="productpage.html?id=${filteredAge[i].id}">
@@ -29,7 +31,8 @@ async function ratedSixteen() {
             </a>`
 }
 } catch (error) {
-    console.log(error);
+        main.innerHTML = `<div class="error">We are so sorry, an error occured while loading this page.</div>`;
+        console.log(error, `Sorry, an error occured`);
 }
 
 }

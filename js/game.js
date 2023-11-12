@@ -1,5 +1,3 @@
-// import {heartIconChange} from "./wishlist.js";
-//could not read classList properties?
 import { getExistingFavs } from "./utils/favFunctions.js";
 import { getCartItems } from "./utils/getCartItems.js";
 const queryString = document.location.search;
@@ -9,11 +7,10 @@ const id = params.get("id");
 const breadcrumbsPage = document.querySelector(".breadcrumbspage");
 
 const url = "https://api.noroff.dev/api/v1/gamehub/" + id;
-
+const main = document.querySelector("main");
 const productContainer = document.querySelector(".productpagecontainer");
 
 const favorites = getExistingFavs();
-// const cart = getCartItems();
 
 async function getGame() {
     try {
@@ -30,7 +27,7 @@ async function getGame() {
     let cssClass = "far";
 
     const doesObjectExist = favorites.find(function(fav) {
-        // console.log(fav);
+
 
         return fav.id === result.id;
     });
@@ -74,10 +71,9 @@ async function getGame() {
             const titleLocalStorage = this.dataset.name;
             const imageLocalStorage = this.dataset.image;
             const priceLocalStorage = this.dataset.price;
-            // console.log(idLocalStorage,  titleLocalStorage, imageLocalStorage, priceLocalStorage)
-  
+
             const currentCartItems = getCartItems();
-            // console.log(currentCartItems);
+
 
             const productExists = currentCartItems.find(function(cart) {
                 return cart.id === idLocalStorage;
@@ -92,10 +88,7 @@ async function getGame() {
                 const newcartItem = currentCartItems.filter((cart) => cart.id !== idLocalStorage);
                 saveCartItem(newcartItem);
             };
-        
-            // console.log("does it exsits: ", productExists);
-        
-            // console.log("id:", idLocalStorage);
+
         };
 
         getCartItems();
@@ -112,7 +105,7 @@ async function getGame() {
         });
                             
         function heartIconChange() {
-            // console.log(this);
+
             this.classList.toggle("fa-regular");
             this.classList.toggle("fa-solid");
      
@@ -123,10 +116,10 @@ async function getGame() {
             const imageLocalStorage = this.dataset.image;
             const priceLocalStorage = this.dataset.price;
 
-            // console.log(titleLocalStorage, idLocalStorage);
+
         
             const currentFavs = getExistingFavs();
-            // console.log(currentFavs);
+
         
         
             const productExists = currentFavs.find(function(fav) {
@@ -142,10 +135,7 @@ async function getGame() {
                 saveFavorites(newFavs);
             };
         
-            // console.log("does it exsits: ", productExists);
-        
-            // console.log("id:", idLocalStorage);
-        }
+        };
         
         getExistingFavs();
 
@@ -155,7 +145,7 @@ async function getGame() {
 
 
 } catch(error) {
-    productContainer.innerHTML = `<div class="error">We are so sorry, an error occured while loading this page.</div>`;
+    main.innerHTML = `<div class="error">We are so sorry, an error occured while loading this page.</div>`;
     console.log(error, `Sorry, an error occured`);
 }
 };

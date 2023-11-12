@@ -1,8 +1,11 @@
 import { getExistingFavs } from "./utils/favFunctions.js";
 const favorites = getExistingFavs();
 
+const main = document.querySelector("main");
 const favoritesContainer = document.querySelector(".wishlistgames");
 const noMoreItems = document.querySelector(".nomoreitems");
+
+try {
 
 if(favorites.length === 0) {
     favoritesContainer.innerHTML = `<p class="nofavs">No favorites to show here.</p>`
@@ -12,7 +15,7 @@ if(favorites.length === 0) {
 favoritesContainer.innerHTML = "";
 
 favorites.forEach(favorite => {
-    try {
+    
     favoritesContainer.innerHTML += `<div class="wishlist1">
                                         <a href="productpage.html?id=${favorite.id}">
                                         <img src="${favorite.image}">
@@ -30,9 +33,10 @@ favorites.forEach(favorite => {
                                         <button class="wishlist-button">Remove item</button>
                                         <button class="wishlist-button">Add to cart</button>
                                     </div>`
-} catch(error) {
-    favoritesContainer.innerHTML = `<div class="error">We are so sorry, an error occured while loading this page.</div>`;
-    console.log(error, `Sorry, an error occured`);
-}
+
 });
 
+} catch(error) {
+    main.innerHTML = `<div class="error">We are so sorry, an error occured while loading this page.</div>`;
+    console.log(error, `Sorry, an error occured`);
+}

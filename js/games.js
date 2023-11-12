@@ -8,6 +8,7 @@ export const gamesRow = document.querySelector(".gamesrow");
 
 export const priceBox = document.querySelector(".price-box");
 
+const main = document.querySelector("main");
 const favorites = getExistingFavs();
 
 async function getGames() {
@@ -20,7 +21,7 @@ async function getGames() {
     
 
     for(let i = 0; i < result.length; i++){
-        let saleFont = "white";
+        let saleFont = "";
         let cssClass = "far";
         let saleMessage = "";
 
@@ -35,7 +36,6 @@ async function getGames() {
             return fav.id === result[i].id;
         });
 
-        // console.log(doesObjectExist);
 
         if (doesObjectExist) {
             cssClass = "fa-solid";
@@ -60,6 +60,8 @@ async function getGames() {
                                     
     };
 
+    
+
     const favButton = document.querySelectorAll(".games-container i");
 
     favButton.forEach((button) => {
@@ -69,20 +71,14 @@ async function getGames() {
     function heartIconChange() {
         this.classList.toggle("fa-regular");
         this.classList.toggle("fa-solid");
- 
-        
         
         const idLocalStorage = this.dataset.id;
         const titleLocalStorage = this.dataset.name;
         const imageLocalStorage = this.dataset.image;
         const priceLocalStorage = this.dataset.price;
-
-        // console.log(titleLocalStorage, idLocalStorage);
     
         const currentFavs = getExistingFavs();
-        // console.log(currentFavs);
-    
-    
+
         const productExists = currentFavs.find(function(fav) {
             return fav.id === idLocalStorage;
         });
@@ -95,10 +91,7 @@ async function getGames() {
             const newFavs = currentFavs.filter((fav) => fav.id != idLocalStorage);
             saveFavorites(newFavs);
         };
-    
-        // console.log("does it exsits: ", productExists);
-    
-        // console.log("id:", idLocalStorage);
+
     }
 
     getExistingFavs();
@@ -109,20 +102,9 @@ async function getGames() {
     
 
     } catch (error) {
-        gamesRow.innerHTML = `<div class="error">We are so sorry, an error occured while loading this page.</div>`;
+        main.innerHTML = `<div class="error">We are so sorry, an error occured while loading this page.</div>`;
         console.log(error, `Sorry, an error occured`);
     };
-    // finally {
-    //     console.log("Thi");
-    // }
-
 };
 
 getGames();
-
-
-// function errorMessage(message) {
-//     message = `An error occured`;
-// }
-
-

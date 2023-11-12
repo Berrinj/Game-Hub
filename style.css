@@ -10,6 +10,7 @@
 
 .error {
   border: 1px solid darkred;
+  text-align: center;
   padding: 1rem;
   margin: auto;
   color: darkred;
@@ -397,6 +398,29 @@ p.promo-p-two {
   padding: 5px;
   color: darkorange;
   letter-spacing: 0.15rem;
+}
+
+.filter-buttons {
+  padding-left: 10%;
+  padding-right: 10%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.filter-buttons p {
+  margin: 0;
+}
+
+.filter-buttons button {
+  width: 50px;
+  background-color: #1b203d;
+  padding: 7px;
+  color: white;
+  border-radius: 7px;
+  border: none;
+  cursor: pointer;
 }
 
 .gamesrow {
