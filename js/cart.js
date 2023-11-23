@@ -1,13 +1,20 @@
 import { getCartItems } from "./utils/getCartItems.js";
+import { handleRemoveButtonClick } from "./utils/removebutton.js";
 
 const itemsInCart = getCartItems();
 const main = document.querySelector("main");
 const cartHeader = document.querySelector(".shopping-cart-header");
 const cartContainer = document.querySelector(".shopping-cart");
 const totalSum =  document.querySelector(".total");
+const deleteItem = document.querySelectorAll("p.deleteitem");
 
 
 try {
+    cartContainer.addEventListener("click", function (event) {
+        if (event.target.classList.contains("deleteitem")) {
+          handleRemoveButtonClick(event);
+        }
+      });
 cartContainer.innerHTML = "";
 
 if(itemsInCart.length === 0) {
@@ -22,8 +29,9 @@ let total = 0;
 itemsInCart.forEach(inCart => {
 
 
-    cartContainer.innerHTML += `<li><a href="productpage.html?id=${inCart.id}">
-                                    
+    cartContainer.innerHTML += `<li>
+                                        <div class="cartItem-container" data-game-id="${inCart.id}">
+                                        <a href="productpage.html?id=${inCart.id}">
                                         <div class="cartinfo">
                                         <img src="${inCart.image}" alt="${inCart.title} cover"></a>
                                         <h2>${inCart.title}</h2>
@@ -31,11 +39,14 @@ itemsInCart.forEach(inCart => {
                                         <p>-Instant download</p>
                                         </p>
                                         <p class="price">Price: $${inCart.price}</p>
-                                        <p class="deleteitem"><i class="fa-regular fa-trash-can"></i>Remove ${inCart.title}</p>
-                                    </div></li>`;
+                                        <button class="deleteitem"><i class="fa-regular fa-trash-can"></i>Remove ${inCart.title}</button>
+                                    </div>
+                                    </div>
+                                    </li>`;
                                     
     let itemPrice = +inCart.price;
     total += itemPrice;
+    
 });
 
 total = total.toFixed(2);
@@ -43,9 +54,9 @@ total = total.toFixed(2);
 totalSum.innerHTML =    `<h3>Total</h3>
                         <h3>$${total}</h3>`;
 
- 
+
+
 } catch(error) {
     main.innerHTML = `<div class="error">We are so sorry, an error occured while loading this page.</div>`;
     console.log(error, `Sorry, an error occured`);
   };
-

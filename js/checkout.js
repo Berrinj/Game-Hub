@@ -17,7 +17,6 @@ itemsInCart.forEach(inCart => {
 productContainer.innerHTML += `<div class="checkout-items">
                                 <img src="${inCart.image}" alt="${inCart.title} cover" class="checkout-img">
                                 <p><b>Title:</b>${inCart.title}</p>
-                                <p><b>Quantity:</b> 1</p>
                                 <p><b>Price:</b>${inCart.price}</p>
                                 <hr>
                                 </div>`;
