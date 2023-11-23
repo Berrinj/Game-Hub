@@ -16,14 +16,14 @@ try {
 
 if(favorites.length === 0) {
     favoritesContainer.innerHTML = `<p class="nofavs">No favorites to show here.</p>`
-    noMoreItems.innerHTML = "";
+    noMoreItems.innerHTML = `<p class="nofavs">No favorites to show here. Go add some and spoil yourself, you deserve it!</p>`;
 };
 
 favoritesContainer.innerHTML = "";
 
 favorites.forEach(favorite => {
     
-    favoritesContainer.innerHTML += `<div class="wishlist1">
+    favoritesContainer.innerHTML += `<li><div class="wishlist1">
                                         <a href="productpage.html?id=${favorite.id}">
                                         <img src="${favorite.image}">
                                         </a>
@@ -39,7 +39,7 @@ favorites.forEach(favorite => {
                                         <h3>Price: ${favorite.price}</h3>
                                         <button class="wishlist-button">Remove item</button>
                                         <button class="wishlist-button">Add to cart</button>
-                                    </div>`
+                                    </div></li>`
 
 });
 

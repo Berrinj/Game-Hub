@@ -71,6 +71,7 @@ async function getGame() {
         cartButton.addEventListener("click", cartIconChange);
         const cartBackground = document.querySelector(".cart");
         const cartIconColor = document.querySelector(".fa-cart-shopping");
+        const goToCartButton = document.querySelector(".buy");
 
         function cartIconChange() {
 
@@ -92,11 +93,13 @@ async function getGame() {
                 saveCartItem(currentCartItems);
 
                 cartIconColor.style.color = "green";
+                goToCartButton.innerHTML = "<b>Added! Go to cart to buy</b>";
                 cartNumberOfItems.innerHTML = `<p class="cart-status">${currentCartItems.length} item(s)</p>`;
                 // cartBackground.style.backgroundColor = "lightgreen";
             } else {
                 const newcartItem = currentCartItems.filter((cart) => cart.id !== idLocalStorage);
                 saveCartItem(newcartItem);
+                goToCartButton.innerHTML = "<b>Removed. Go to cart</b>";
                 cartIconColor.style.color = "";
 
                 // cartBackground.style.backgroundColor = "";

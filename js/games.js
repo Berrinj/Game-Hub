@@ -13,6 +13,8 @@ const main = document.querySelector("main");
 const cartNumberOfItems = document.querySelector(".cart-status");
 const favorites = getExistingFavs();
 const currentCartItems = getCartItems();
+const dropdown = document.querySelector("select");
+
 
 async function getGames() {
 
@@ -60,11 +62,8 @@ async function getGames() {
                                     </a>
                                     <i class="${cssClass} fa-heart fa-2xl" data-id="${result[i].id}" data-name="${result[i].title}" data-image="${result[i].image}" data-price="${result[i].price}"></i>
                                     </div>
-                                    `
-                                    
+                                    `                 
     };
-
-    
 
     const favButton = document.querySelectorAll(".games-container i");
 
